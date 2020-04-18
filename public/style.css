@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-image: url("bodyBackground2.svg");
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: Roboto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header div ul {
+  list-style-type: none;
+}
+header div ul li {
+  font-weight: bolder;
+  color: rgb(106, 176, 204);
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+}
+header div ul li:hover {
+  color: crimson;
+}
+header div ul li.active {
+  color: crimson;
+}
+.callUsBtn {
+  background-color: aliceblue;
+  margin-top: 4px;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.callUsBtn:hover {
+  background-color: lightblue;
+}
+.NALogo {
+  width: 150px;
+  height: auto;
+  max-height: 70px;
+  margin-right: 20px;
+}
+main {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#dashboard ul {
+  list-style-type: none;
+  width: fit-content;
+  margin: auto;
+}
+#dashboard ul li {
+  color: #00816b;
+  font-weight: bolder;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  width: 175px;
+  cursor: pointer;
+}
+#dashboard ul li div {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #1c809d;
+}
+#dashboard ul li:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}
+footer {
+  background-image: url("footerBg3.svg");
+  background-size: 1440px 126px;
+  background-repeat: repeat-x;
+  /*background-color: #1c809d;*/
+  height: 126px;
+  width: 100%;
+}
+footer div img:hover {
+  box-shadow: #125264 4px 4px 4px;
+}
+#introP {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  color: crimson;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-position: -200px top;
+  }
+  header {
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+  header div ul {
+    display: none;
+  }
+  #dashboard ul li {
+    display: initial;
+  }
+  #dashboard ul li img {
+    margin: auto;
+  }
+  .NALogo {
+    width: 110px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 0;
+  }
+  #introP {
+    margin: 10px;
+    margin-top: 0;
+    padding: 10px;
+    background-color: white;
+  }
+  footer {
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    background-position: -220px top;
+  }
+  header div ul {
+    display: none;
+  }
+}

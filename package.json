@@ -1,0 +1,12 @@
+{
+  "name": "nerdaires",
+  "version": "1.0.0",
+  "description": "nerd aries personal and business site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
