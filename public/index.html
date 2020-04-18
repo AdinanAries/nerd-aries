@@ -9,20 +9,31 @@
       rel="stylesheet"
     />
     <title>NerdAries</title>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div>
           <ul>
-            <a href=""><li class="active">Home</li></a>
-            <a href=""><li>Websites</li></a>
-            <a href=""><li>Vlogs</li></a>
-            <a href=""><li>Tutoring</li></a>
-            <a href="https://nerdaries.azurewebsites.net/"
-              ><li>Mentoring</li></a
-            >
-            <a href=""><li>Patreons</li></a>
+            <li class="HomePageLink NavLink active" id="HomeLink">Home</li>
+            <li class="WebsitesPageLink NavLink" id="WebsitesLink">Websites</li>
+            <li class="VlogsPageLink NavLink" id="VlogsLink">Vlogs</li>
+            <li class="TutoringPageLink NavLink" id="TutoringLink">Tutoring</li>
+            <!--a href="https://nerdaries.azurewebsites.net/"
+            -->
+            <li class="MentoringPageLink NavLink" id="MentoringLink">
+              Mentoring
+            </li>
+            <!--/a
+            -->
+            <li class="PatreonsPageLink NavLink" id="PatreonsLink">Patreons</li>
           </ul>
           <a href="tel:17327999546"
             ><div class="callUsBtn">
@@ -70,7 +81,7 @@
             Pick your mission below?
           </h3>
           <ul style="text-align: center;">
-            <li>
+            <li class="WebsitesPageLink">
               <a href="#"
                 ><div>
                   <img src="WebsitesIcon.png" alt="" />
@@ -83,7 +94,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="VlogsPageLink">
               <a href="#"
                 ><div>
                   <img src="VlogsIcon.png" alt="" />
@@ -96,7 +107,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="TutoringPageLink">
               <a href="#"
                 ><div>
                   <img src="TutoringIcon.png" alt="" />
@@ -109,20 +120,22 @@
                 </div></a
               >
             </li>
-            <li>
-              <a href="https://nerdaries.azurewebsites.net/"
-                ><div>
-                  <img src="MentoringIcon.png" alt="" />
-                  <p>Mentoring</p>
-                  <small style="margin-top: 5px; color: rgb(243, 114, 9);"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</small
-                  >
-                </div></a
-              >
+            <li class="MentoringPageLink">
+              <!--a href="https://nerdaries.azurewebsites.net/"
+              -->
+              <div>
+                <img src="MentoringIcon.png" alt="" />
+                <p>Mentoring</p>
+                <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.</small
+                >
+              </div>
+              <!--/a
+                -->
             </li>
-            <li>
+            <li class="PatreonsPageLink">
               <a href="#"
                 ><div>
                   <img src="PatreonIcon.png" alt="" />
@@ -136,6 +149,56 @@
               >
             </li>
           </ul>
+        </div>
+        <div id="WebsitesPage">
+          <div class="PageIntro">
+            <img src="WebsitesIcon.png" alt="" />
+            <p>Websites</p>
+            <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</small
+            >
+          </div>
+        </div>
+        <div id="VlogsPage">
+          <div class="PageIntro">
+            <img src="VlogsIcon.png" alt="" />
+            <p>Vlogs</p>
+            <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</small
+            >
+          </div>
+        </div>
+        <div id="TutoringPage">
+          <div class="PageIntro">
+            <img src="TutoringIcon.png" alt="" />
+            <p>Tutoring</p>
+            <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</small
+            >
+          </div>
+        </div>
+        <div id="MentoringPage">
+          <div class="PageIntro">
+            <img src="MentoringIcon.png" alt="" />
+            <p>Mentoring</p>
+            <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</small
+            >
+          </div>
+        </div>
+        <div id="PatreonsPage">
+          <div class="PageIntro">
+            <img src="PatreonIcon.png" alt="" />
+            <p>Patreons</p>
+            <small style="margin-top: 5px; color: rgb(243, 114, 9);"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</small
+            >
+          </div>
         </div>
       </main>
       <footer>
@@ -217,5 +280,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
