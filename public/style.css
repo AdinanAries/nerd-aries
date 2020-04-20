@@ -51,8 +51,8 @@ header div ul li.active {
   background-color: lightblue;
 }
 .NALogo {
-  width: 150px;
-  height: auto;
+  width: 100px;
+  height: 40px;
   max-height: 70px;
   margin-right: 20px;
 }
@@ -74,10 +74,11 @@ main {
   text-decoration: none;
   display: inline-block;
   width: 175px;
+  height: 250px;
   cursor: pointer;
 }
 #dashboard ul li div {
-  width: 60%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -85,9 +86,15 @@ main {
   text-align: center;
   color: #1c809d;
 }
+#dashboard ul li div img {
+  background-color: #c5f6ff;
+  padding: 27px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
 #dashboard ul li:hover {
-  transform: scale(1.3);
-  transition: transform 0.5s ease;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 #WebsitesPage,
 #PatreonsPage,
@@ -106,12 +113,43 @@ main {
   margin-bottom: 40px;
   cursor: pointer;
 }
-#GoBackBtn:hover {
-  transform: scale(1.3);
-  transition: transform 0.5s ease;
+#GoBackBtn img {
+  background-color: #c5f6ff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#GoBackBtn:hover,
+.NextButton:hover,
+.PreviousButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.NextButton,
+.PreviousButton {
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 40px;
+  text-align: center;
+}
+.NextButton img,
+.PreviousButton img {
+  width: 30px;
+  height: auto;
+  background-color: #c5f6ff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.NextButton p,
+.PreviousButton p {
+  margin-top: -5px;
+  font-weight: bolder;
+  color: #1c809d;
+  width: 160px;
 }
 #GoBackBtn img {
-  width: 40px;
+  width: 30px;
   height: auto;
 }
 .PageIntro {
@@ -120,6 +158,7 @@ main {
 }
 .PageContent {
   min-height: 35vh;
+  display: none;
 }
 footer {
   background-image: url("footerBg3.svg");
@@ -139,6 +178,45 @@ footer div img:hover {
   margin-top: 10px;
   color: rgb(214, 68, 0);
 }
+.WebsiteEstimatesForm fieldset {
+  color: #408f9d;
+  border: 1px solid #408f9d;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgb(211, 243, 253);
+  max-width: 700px;
+  margin: auto;
+  margin-top: 15px;
+}
+.WebsiteEstimatesForm fieldset input {
+  max-width: 500px;
+  width: 95%;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+.WebsiteEstimatesForm fieldset input[type="checkbox"] {
+  width: 18px;
+  margin: 4px;
+}
+.WebsiteEstimatesForm fieldset textarea {
+  width: 95%;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+  height: 130px;
+}
+.submitBtn {
+  background-color: darkslateblue;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  border: 0;
+  margin: 5px;
+  min-width: 150px;
+}
 @media only screen and (max-width: 700px) {
   body {
     background-position: -200px top;
@@ -154,6 +232,9 @@ footer div img:hover {
   #dashboard ul li {
     display: initial;
   }
+  #dashboard ul li div {
+    margin-top: 30px;
+  }
   #dashboard ul li img {
     margin: auto;
   }
@@ -168,6 +249,10 @@ footer div img:hover {
     margin-top: 0;
     padding: 10px;
     background-color: white;
+  }
+  .WebsiteEstimatesForm {
+    padding: 5px;
+    padding-top: 50px;
   }
   footer {
   }

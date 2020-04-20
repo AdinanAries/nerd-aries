@@ -65,6 +65,26 @@ function showPatreonsPage() {
   document.getElementById("PatreonsPage").style.display = "block";
 }
 
+function showWebsitesPageContent() {
+  $(".WebsitePageIntro").css("display", "none");
+  $("#WebsitesPageContent").css("display", "block");
+}
+
+function showWebsitesPageIntro() {
+  $(".WebsitePageIntro").css("display", "block");
+  $("#WebsitesPageContent").css("display", "none");
+}
+
+function showTutoringPageContent() {
+  $(".TutoringPageIntro").css("display", "none");
+  $("#TutoringPageContent").css("display", "block");
+}
+
+function showtutoringPageIntro() {
+  $(".TutoringPageIntro").css("display", "block");
+  $("#TutoringPageContent").css("display", "none");
+}
+
 $("#GoBackBtn").click(function (event) {
   showHomePage();
 });
@@ -91,4 +111,20 @@ $(".TutoringPageLink").click(function (event) {
 
 $(".MentoringPageLink").click(function (event) {
   showMentoringPage();
+});
+
+$("#toWebsitesCostEstimateFormBtn").click(function (event) {
+  showWebsitesPageContent();
+});
+
+$("#BacktoWebsitesIntroBtn").click(function (event) {
+  showWebsitesPageIntro();
+});
+
+$("#toBookTutoringFormBtn").click(function (event) {
+  showTutoringPageContent();
+});
+
+$("#BacktoTutoringIntroBtn").click(function (event) {
+  showtutoringPageIntro();
 });
