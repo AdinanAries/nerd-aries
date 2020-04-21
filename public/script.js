@@ -10,6 +10,7 @@ function showHomePage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("dashboard").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showWebSitesPage() {
   $("#GoBackBtn").css("display", "block");
@@ -23,6 +24,7 @@ function showWebSitesPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("WebsitesPage").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showVlogsPage() {
   $("#GoBackBtn").css("display", "block");
@@ -36,6 +38,7 @@ function showVlogsPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("VlogsPage").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showTutoringPage() {
   $("#GoBackBtn").css("display", "block");
@@ -49,6 +52,7 @@ function showTutoringPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("TutoringPage").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showMentoringPage() {
   $("#GoBackBtn").css("display", "block");
@@ -62,6 +66,7 @@ function showMentoringPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showPatreonsPage() {
   $("#GoBackBtn").css("display", "block");
@@ -75,6 +80,7 @@ function showPatreonsPage() {
   document.getElementById("MentoringPage").style.display = "none";
   document.getElementById("PatreonsPage").style.display = "block";
   document.getElementById("signupPage").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showLoginPage() {
   $("#GoBackBtn").css("display", "block");
@@ -88,6 +94,7 @@ function showLoginPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showSignupPage() {
   $("#GoBackBtn").css("display", "block");
@@ -101,26 +108,31 @@ function showSignupPage() {
   document.getElementById("TutoringPage").style.display = "none";
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
 function showWebsitesPageContent() {
   $(".WebsitePageIntro").css("display", "none");
   $("#WebsitesPageContent").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
 function showWebsitesPageIntro() {
   $(".WebsitePageIntro").css("display", "block");
   $("#WebsitesPageContent").css("display", "none");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
 function showTutoringPageContent() {
   $(".TutoringPageIntro").css("display", "none");
   $("#TutoringPageContent").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
 function showtutoringPageIntro() {
   $(".TutoringPageIntro").css("display", "block");
   $("#TutoringPageContent").css("display", "none");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
 $("#GoBackBtn").click(function (event) {
