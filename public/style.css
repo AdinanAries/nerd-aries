@@ -1,10 +1,81 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-appearance: none;
+}
+input[type="text"] {
+  border-radius: 0;
+}
+input[type="submit"] {
+  border-radius: 0;
+}
+input[type="email"] {
+  border-radius: 0;
+}
+input[type="button"] {
+  border-radius: 0;
+}
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  outline: none;
+  width: 20px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid #d9dadc;
+  border-radius: 50px;
+  box-shadow: inset -20px 0 0 0 #ffffff;
+  transition-duration: 200ms;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.5px;
+  height: 6.5px;
+  background-color: transparent;
+  border: 1px solid darkgrey;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]:checked {
+  border-color: #4ed164;
+  box-shadow: inset 20px 0 0 0 #4ed164;
+}
+
+input[type="checkbox"]:checked:after {
+  left: 10px;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
+}
+
+input[type="radio"] {
+  position: relative;
+  appearance: none;
+  outline: none;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid #d9dadc;
+  border-radius: 50px;
+  box-shadow: inset -20px 0 0 0 #ffffff;
+  transition-duration: 200ms;
+}
+
+input[type="radio"]:checked {
+  border-color: #4ed164;
+  box-shadow: inset 20px 0 0 0 #4ed164;
 }
 a {
   text-decoration: none;
   color: black;
+}
+.wrapper {
+  max-width: 1500px;
+  margin: auto;
 }
 body {
   background-image: url("bodyBackground2.svg");
@@ -50,14 +121,47 @@ header div ul li.active {
 .callUsBtn:hover {
   background-color: lightblue;
 }
+.loginBtn,
+.logoutBtn {
+  text-align: right;
+  color: #1c809d;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.loginBtn img,
+.logoutBtn img {
+  width: 20px;
+}
+.loginBtn sup,
+.logoutBtn sup {
+  font-size: 14px;
+  margin-right: 4px;
+}
+.loginBtnContent,
+.logoutBtnContent {
+  width: fit-content;
+  font-weight: bolder;
+  margin: auto;
+  /*background-color: #7effd8;*/
+}
+.logoutBtnContent:hover,
+.loginBtnContent:hover {
+  /*background-color: #ffa46f;*/
+  color: crimson;
+}
 .NALogo {
   width: 100px;
   height: 40px;
   max-height: 70px;
   margin-right: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
 }
 main {
-  min-height: 75vh;
+  min-height: 68vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,8 +191,10 @@ main {
   color: #1c809d;
 }
 #dashboard ul li div img {
+  width: 70px;
+  height: 70px;
   background-color: #c5f6ff;
-  padding: 27px;
+  padding: 30px 45px;
   margin-bottom: 5px;
   border-radius: 5px;
 }
@@ -100,7 +206,9 @@ main {
 #PatreonsPage,
 #VlogsPage,
 #TutoringPage,
-#MentoringPage {
+#MentoringPage,
+#loginPage,
+#signupPage {
   max-width: 700px;
   margin: auto;
   display: none;
@@ -217,12 +325,50 @@ footer div img:hover {
   margin: 5px;
   min-width: 150px;
 }
+#UserAvatar {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border-radius: 100%;
+  background-color: rgb(211, 243, 253);
+}
+.loginInputs,
+.signupInputs {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.loginInputs input[type="email"],
+.loginInputs input[type="password"],
+.loginInputs input[type="text"],
+.signupInputs input[type="email"],
+.signupInputs input[type="password"],
+.signupInputs input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  margin: 5px;
+  background-color: rgb(211, 243, 253);
+  border-radius: 4px;
+  border: 1px solid #1c809d;
+}
+.loginSubmitBtn,
+.signupSubmitBtn {
+  width: 250px;
+  margin: auto;
+}
 @media only screen and (max-width: 700px) {
   body {
     background-position: -200px top;
   }
+  .loginBtn,
+  .logoutBtn {
+    padding-right: 0;
+  }
   header {
-    padding-top: 0;
+    padding-top: 5;
     padding-bottom: 60px;
     margin: 0;
   }
@@ -255,6 +401,10 @@ footer div img:hover {
     padding-top: 50px;
   }
   footer {
+    padding-top: 10px;
+    margin-top: 20px;
+    height: 200px;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 320px) {
