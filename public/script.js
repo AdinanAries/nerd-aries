@@ -190,6 +190,7 @@ $(window).scroll(function () {
   if ($(window).scrollTop() > 70) {
     let TopNavBarMenu = document.getElementById("TopNavBarMenu");
     TopNavBarMenu.style.position = "fixed";
+    TopNavBarMenu.style.zIndex = 2;
     /*TopNavBarMenu.style.transition = "top 2s";*/
     TopNavBarMenu.style.left = "0";
     TopNavBarMenu.style.top = "0";
@@ -199,6 +200,7 @@ $(window).scroll(function () {
     let TopNavBarMenu = document.getElementById("TopNavBarMenu");
     /*TopNavBarMenu.style.transition = "top 2s";*/
     TopNavBarMenu.style.position = "initial";
+    TopNavBarMenu.style.zIndex = "initial";
     TopNavBarMenu.style.left = "0";
     TopNavBarMenu.style.top = "0";
     TopNavBarMenu.style.width = "auto";
