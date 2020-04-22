@@ -398,9 +398,12 @@ footer div img:hover {
   width: 250px;
   margin: auto;
 }
+.VlogCollection {
+  margin-top: 10px;
+}
 .EachVlog {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   padding-top: 20px;
   background-color: #eee;
 }
@@ -413,7 +416,6 @@ footer div img:hover {
 .EachVlog p small {
   text-align: left;
   color: #81625d;
-  margin: 10px;
 }
 
 @media only screen and (max-width: 700px) {
