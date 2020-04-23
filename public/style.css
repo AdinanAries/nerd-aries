@@ -401,7 +401,8 @@ footer div img:hover {
 }
 #UserAvatar,
 .shoppingCart,
-.Notifications {
+.Notifications,
+.loginBtnIcon {
   width: 40px;
   height: 40px;
   padding: 2px;
@@ -410,7 +411,8 @@ footer div img:hover {
   cursor: pointer;
 }
 .shoppingCartParent,
-.NotificationsParent {
+.NotificationsParent,
+.LoginBtnParent {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -423,8 +425,12 @@ footer div img:hover {
   padding: 4px;
   border-radius: 100%;*/
 }
+.LoginBtnParent {
+  display: none;
+}
 .shoppingCart,
-.Notifications {
+.Notifications,
+.loginBtnIcon {
   background: none;
   border-radius: 0;
 }
@@ -511,7 +517,7 @@ footer div img:hover {
   }
   header {
     padding-top: 5;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     margin: 0;
     /*background-color: rgba(70, 248, 248, 0.562);*/
   }
@@ -539,6 +545,11 @@ footer div img:hover {
   }
   .sectionSeperatorParent {
     width: 100%;
+  }
+  .sectionSeperator {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .eachAdditionalImg {
     width: 100vw;
@@ -570,6 +581,22 @@ footer div img:hover {
     margin-top: 20px;
     height: 200px;
     background-size: cover;
+  }
+  .shoppingCartParent,
+  .NotificationsParent,
+  .LoginBtnParent {
+    margin-top: 5px;
+  }
+  .LoginBtnParent {
+    display: block;
+    background-color: #0f00226e;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  .loginBtn {
+    margin: auto;
   }
 }
 @media only screen and (max-width: 320px) {
