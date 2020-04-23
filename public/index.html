@@ -23,6 +23,9 @@
         <header>
           <div>
             <ul id="TopNavBarMenu">
+              <li>
+                <div class="JoinBtn loginBtn">Join</div>
+              </li>
               <li class="HomePageLink NavLink active" id="HomeLink">Home</li>
               <li class="WebsitesPageLink NavLink" id="WebsitesLink">
                 Websites
@@ -38,17 +41,37 @@
                 Patreons
               </li>
             </ul>
-            <img
-              class="NALogo"
-              src="images/NerdAriesLogo2.png"
-              alt="Business Logo"
-            />
+            <!--table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      class="NALogo"
+                      src="images/NerdAriesLogo2.png"
+                      alt="Business Logo"
+                    />
+                  </td>
+                  <td>
+                    <div class="JoinBtn">Join</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table-->
+            <ul style="display: block;">
+              <li id="logoLi">
+                <img
+                  class="NALogo"
+                  src="images/NerdAriesLogo2.png"
+                  alt="Business Logo"
+                />
+              </li>
+            </ul>
           </div>
           <div id="NavbarRightIcons">
             <div id="UserAvatarContainer" style="margin: auto;">
               <img id="UserAvatar" src="UserAvatar.png" alt="" />
             </div>
-            <div class="loginBtn">
+            <!--div class="loginBtn">
               <div class="loginBtnContent">
                 <sup>login</sup><img src="BlueLoginIcon.png" alt="" />
               </div>
@@ -57,7 +80,7 @@
               <div class="logoutBtnContent">
                 <sup>logout</sup><img src="BlueLogoutIcon.png" alt="" />
               </div>
-            </div>
+            </div-->
             <div class="shoppingCartParent">
               <img class="shoppingCart" src="ShoppingCartIcon.png" alt="" />
               <div class="shoppingCartItemCount">3</div>
@@ -96,7 +119,6 @@
           </div>
           <div id="loginPage">
             <div class="PageIntro">
-              <img src="GreenLoginIcon.png" alt="" />
               <h3 style="color: #1c809d; margin-bottom: 30px;">
                 Provide your login information below
               </h3>
@@ -142,7 +164,6 @@
           </div>
           <div id="signupPage">
             <div class="PageIntro">
-              <img src="GreenLoginIcon.png" alt="" />
               <h3 style="color: #1c809d; margin-bottom: 30px;">
                 Provide your information below
               </h3>
