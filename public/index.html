@@ -8,6 +8,23 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>NerdAries</title>
 
     <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -16,6 +33,11 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -329,6 +351,51 @@
                   <img class="additionalImg" src="DeploymentImg.jpg" alt="" />
                 </li>
               </ul>
+              <div class="sectionSeperatorParent">
+                <h2 class="sectionSeperator">
+                  <span>Reviews from clients</span>
+                </h2>
+              </div>
+              <div style="text-align: center;">
+                <div class="ClientReviews">
+                  <div class="eachReview">
+                    <img
+                      class="reviewProfilePic"
+                      src="DeploymentImg.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <h4 style="color: rgb(9, 169, 243); margin: 10px;">
+                        My name <small>location here</small>
+                      </h4>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p style="margin-top: 5px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam dolore aspernatur cupiditate unde mollitia
+                        voluptatem
+                      </p>
+                    </div>
+                  </div>
+                  <div class="eachReview">
+                    <img
+                      class="reviewProfilePic"
+                      src="BodyBackground3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="eachReview">
+                    <img
+                      class="reviewProfilePic"
+                      src="DesignPicture.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div id="WebsitesPage">
@@ -684,13 +751,21 @@ add your notes here...
                       vlogs. You may see it often used to introduce my videos.
                     </small>
                   </p>
-                  <video
+                  <iframe
+                    class="vlogIframe"
+                    width="100%"
+                    src="https://www.youtube.com/embed/HtSuA80QTyo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <!--video
                     style="width: 100%; height: auto; margin-top: 20px;"
                     controls
                   >
                     <source src="VlogsIntro2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
-                  </video>
+                  </video-->
                 </div>
                 <div class="EachVlog">
                   <p>NerdAries Intro</p>

@@ -207,3 +207,10 @@ $(window).scroll(function () {
     TopNavBarMenu.style.background = "none";
   }
 });
+
+$(document).ready(function () {
+  $(".ClientReviews").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+});

@@ -499,11 +499,33 @@ footer div img:hover {
   text-align: left;
   color: #81625d;
 }
-
+.vlogIframe {
+  height: 300px;
+}
+.ClientReviews {
+  max-width: 600px;
+  margin: auto;
+}
+.eachReview {
+  text-align: center;
+}
+.reviewProfilePic {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin: auto;
+}
+.checked {
+  color: gold;
+}
 @media only screen and (max-width: 700px) {
   body {
     background-position: -200px top;
     background: none;
+  }
+  .vlogIframe {
+    height: 150px;
   }
   main {
     padding-bottom: 0;
@@ -574,7 +596,7 @@ footer div img:hover {
   }
   .WebsiteEstimatesForm {
     padding: 5px;
-    padding-top: 50px;
+    padding-top: 0px;
   }
   footer {
     padding-top: 10px;
