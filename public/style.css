@@ -350,7 +350,13 @@ footer {
   width: 100%;
 }
 footer div img:hover {
-  box-shadow: #125264 4px 4px 4px;
+  box-shadow: #111111 4px 4px 4px;
+  box-shadow: black 4px 4px 4px;
+}
+.FooterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #introP {
   text-align: center;
@@ -358,6 +364,7 @@ footer div img:hover {
   margin: auto;
   margin-top: 10px;
   color: rgb(214, 68, 0);
+  color: rgb(0, 50, 78);
 }
 .WebsiteEstimatesForm fieldset {
   color: #408f9d;
@@ -522,6 +529,14 @@ footer div img:hover {
 .slick-next:before {
   color: red !important;
 }
+.CopyrightContainer {
+  padding-top: 30px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
 @media only screen and (max-width: 700px) {
   body {
@@ -609,10 +624,18 @@ footer div img:hover {
     padding-top: 0px;
   }
   footer {
-    padding-top: 10px;
+    padding-top: 60px;
     margin-top: 20px;
-    height: 200px;
+    height: 300px;
     background-size: cover;
+  }
+  footer .wrapper {
+    text-align: center;
+  }
+  .FooterContent {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
   }
   .shoppingCartParent,
   .NotificationsParent,
