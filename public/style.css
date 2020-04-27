@@ -372,9 +372,10 @@ footer div img:hover {
   background: #00445f;
   border-radius: 0.4em;
   width: fit-content;
+  max-width: 500px;
   margin: auto;
   padding: 10px;
-  box-shadow: darkgray 0 4px 4px;
+  box-shadow: darkgray 0 3px 3px;
 }
 
 .speech-bubble:after {
