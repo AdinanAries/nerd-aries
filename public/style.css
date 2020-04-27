@@ -369,7 +369,9 @@ footer div img:hover {
 }
 .speech-bubble {
   position: relative;
-  background: #00445f;
+  /*background: #00445f;*/
+  background-image: url("Sun-Tornado.svg");
+  background-size: cover;
   border-radius: 0.4em;
   width: fit-content;
   max-width: 500px;
@@ -386,7 +388,7 @@ footer div img:hover {
   width: 0;
   height: 0;
   border: 22px solid transparent;
-  border-bottom-color: #00445f;
+  border-bottom-color: #ff7b00;
   border-top: 0;
   border-left: 0;
   margin-left: -11px;
