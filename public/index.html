@@ -160,8 +160,14 @@
               </p>
             </div>
             <div class="loginInputs">
-              <input type="email" placeholder="email" />
-              <input type="password" placeholder="password" />
+              <fieldset class="loginInputFld">
+                <legend>Enter your Email</legend>
+                <input type="email" placeholder="email" />
+              </fieldset>
+              <fieldset class="loginInputFld">
+                <legend>Enter your Password</legend>
+                <input type="password" placeholder="password" />
+              </fieldset>
               <br />
               <div
                 class="submitBtn loginSubmitBtn"
@@ -205,11 +211,22 @@
               </p>
             </div>
             <div class="signupInputs">
-              <input type="text" placeholder="first name" />
-              <input type="text" placeholder="last name" />
-              <input type="email" placeholder="email" />
-              <input type="password" placeholder="password" />
-              <br />
+              <fieldset class="loginInputFld">
+                <legend>Enter your name</legend>
+                <input type="text" placeholder="full name" />
+              </fieldset>
+              <fieldset class="loginInputFld">
+                <legend>Enter your email</legend>
+                <input type="email" placeholder="email" />
+              </fieldset>
+              <fieldset class="loginInputFld">
+                <legend>Enter your Password</legend>
+                <input type="password" placeholder="password" />
+              </fieldset>
+              <fieldset class="loginInputFld">
+                <legend>Confirm your Password</legend>
+                <input type="password" placeholder="password" />
+              </fieldset>
               <div class="submitBtn signupSubmitBtn">Signup</div>
               <p
                 class="loginBtn"
@@ -336,7 +353,7 @@
               </ul>
               <div class="sectionSeperatorParent">
                 <h2 class="sectionSeperator">
-                  <span>We design, build, and deploy</span>
+                  <span>I design, build, and deploy</span>
                 </h2>
               </div>
               <ul class="additionalDashboardImages">
@@ -612,45 +629,22 @@
                     When rating a car, we often think about its features which
                     make it better or worse than other cars. Some of the
                     features are about the looks, the engine capacity, its
+                    <br />
+                    <br />
                     efficiency, how comfortable it is inside, etc... you get the
                     idea... This means that the external beauty of the car is
+                    <br />
+                    <br />
                     only one of many things that can make it a great car, and of
                     course, can determine how much the car costs.
                     <br />
                     <br />
                     When it comes to building your website, the statement above
                     implies that the measure of your website's good and cost is
+                    <br />
+                    <br />
                     going to be based not only on the design or looks, but also,
                     on what lies "under the hood" that makes it work.
-                    <br />
-                    <br />
-                    It is also worth noting that, with your website's
-                    appearnace, having a truly unique design will really set you
-                    apart from all other business websites. And also, depending
-                    on the features you want on your website, the amount of work
-                    needed to build the backend(engine) of your website can be
-                    estimated by the number and complexity of those features.
-                    <br />
-                    <br />
-                    Hiring experienced developer(s) to build your website from
-                    scratch can be expensive at times, with the two main
-                    cost-influencing factors being the type of design and the
-                    kinds of features, where features can be defined as "the
-                    functions that your website provides for your employees,
-                    customers, and other website visitors". It is also important
-                    to note that, as the amount and complexity of features on
-                    your website grows, the design part may gradually loose much
-                    significance on the overall cost of building and maintaining
-                    the website.
-                    <br />
-                    <br />
-                    At NerdAries, we always work around our clients budget,
-                    making sure that they get the highest possible value from
-                    their expenditure. This implies that, we do a thorough
-                    exploration of the ecosystem, combining, comparing and
-                    contrasting different technologies to produce a package that
-                    fits their exact budget. Click next to begin your journey
-                    with us.
                   </p>
                 </div>
                 <div
@@ -696,21 +690,15 @@
                   padding: 5px;
                 "
               >
-                Fill out the form below to get the estimated cost of your
-                website.
+                Add your information below, I'll reach out to you.
               </p>
               <div class="WebsiteEstimatesForm">
                 <fieldset>
-                  <legend>Personal Information</legend>
+                  <legend>Add personal information</legend>
                   <input
                     id="firstName"
                     type="text"
-                    placeholder="enter your first name"
-                  />
-                  <input
-                    id="lastName"
-                    type="text"
-                    placeholder="enter your last name"
+                    placeholder="enter your name"
                   />
                   <input
                     id="email"
@@ -724,167 +712,7 @@
                   />
                 </fieldset>
                 <fieldset>
-                  <legend>Address</legend>
-                  <input
-                    id="Street"
-                    type="text"
-                    placeholder="enter your street address"
-                  />
-                  <input id="city" type="text" placeholder="enter your city" />
-                  <input
-                    id="state"
-                    type="text"
-                    placeholder="enter your state"
-                  />
-                  <input
-                    id="country"
-                    type="text"
-                    placeholder="enter your country"
-                  />
-                  <input
-                    id="zipcode"
-                    type="text"
-                    placeholder="enter your zipcode"
-                  />
-                </fieldset>
-                <fieldset>
-                  <legend>Add your website's specifications</legend>
-                  <div style="text-align: left;">
-                    <p style="color: rgb(243, 114, 9); margin-bottom: 5px;">
-                      What type of business are you?
-                    </p>
-                    <input id="NotABusines" type="checkbox" /><label
-                      for="NotABusines"
-                      >Not A Business</label
-                    ><br />
-                    <p
-                      style="
-                        color: rgb(243, 114, 9);
-                        margin-top: 10px;
-                        margin-bottom: 5px;
-                      "
-                    >
-                      What's the size of your market?
-                    </p>
-                    <input id="SmallBusiness" type="checkbox" /><label
-                      for="SmallBusiness"
-                      >Small Business</label
-                    ><br />
-                    <input id="MediumBusiness" type="checkbox" /><label
-                      for="MediumBusiness"
-                      >Medium-Size Business</label
-                    ><br />
-                    <input id="LargeBusiness" type="checkbox" /><label
-                      for="LargeBusiness"
-                      >Medium-To-Large Business</label
-                    ><br />
-
-                    <p
-                      style="
-                        color: rgb(243, 114, 9);
-                        margin-top: 10px;
-                        margin-bottom: 5px;
-                      "
-                    >
-                      Add your website's features.
-                    </p>
-                    <input id="RecondKeeping" type="checkbox" /><label
-                      for="RecondKeeping"
-                      >Sales Record Keeping</label
-                    ><br />
-                    <input id="CustomDesign" type="checkbox" /><label
-                      for="CustomDesign"
-                      >Custom Unique Design</label
-                    ><br />
-                    <input id="LoginCapabilities" type="checkbox" /><label
-                      for="LoginCapabilities"
-                      >Login Capabilities</label
-                    ><br />
-                    <input id="InventoryManagement" type="checkbox" /><label
-                      for="InventoryManagement"
-                      >Inventory Management</label
-                    ><br />
-                    <input id="MalwareSupport" type="checkbox" /><label
-                      for="MalwareSupport"
-                      >Customer Feedback</label
-                    ><br />
-                    <input id="OtherSupport" type="checkbox" /><label
-                      for="OtherSupport"
-                      >Online Products and Services Purchase</label
-                    ><br />
-                    <input id="OtherSupport" type="checkbox" /><label
-                      for="OtherSupport"
-                      >Company Blogs</label
-                    ><br />
-                    <textarea id="SvcDescription">
-add your notes here...
-                  </textarea
-                    >
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <legend>
-                    Payment
-                  </legend>
-                  <div>
-                    <table
-                      style="
-                        text-align: left;
-                        width: 100%;
-                        margin-bottom: 10px;
-                      "
-                    >
-                      <tbody>
-                        <tr>
-                          <td>
-                            Ordered Services:
-                          </td>
-                          <td>...</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Service(s) Cost:
-                          </td>
-                          <td>$0.00</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Tax:
-                          </td>
-                          <td>$0.00</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Total Cost
-                          </td>
-                          <td>$0.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <input
-                    id="CardNo."
-                    type="text"
-                    placeholder="enter your credit/debit card no."
-                  />
-                  <input
-                    id="CardName"
-                    type="text"
-                    placeholder="enter name printed on card"
-                  />
-                  <input
-                    id="cardCvv"
-                    type="text"
-                    placeholder="enter card security code(cvv)"
-                  />
-                  <input
-                    id="cardExp"
-                    type="text"
-                    placeholder="enter card expiration date"
-                  />
-                </fieldset>
-                <fieldset>
-                  <legend>Login</legend>
+                  <legend>Create an account</legend>
                   <input
                     id="costEstimateFormPassword"
                     type="text"
@@ -1025,12 +853,14 @@ add your notes here...
                     <br />
                     Over the past years, I've tutored and helped many students
                     of various colleges and bootcamps as they were struggling
-                    with their academic materials. Most of my students however
-                    have been from bootcamps where they've had no option than to
-                    keep up with the intensity of the training offered there. If
-                    you happen to be struggling with your course materials,
-                    trust me to say that you are not an exception; many of my
-                    students haven't been.
+                    with their academic materials.
+                    <br />
+                    <br />
+                    Most of my students however have been from bootcamps where
+                    they've had no option than to keep up with the intensity of
+                    the training offered there. If you happen to be struggling
+                    with your course materials, trust me to say that you are not
+                    an exception; many of my students haven't been.
                     <br />
                     <br />
                     Book your tutoring session by clicking on the next button
@@ -1106,6 +936,7 @@ add your notes here...
           <div id="MentoringPage">
             <div class="PageIntro">
               <h3 style="color: #1c809d; margin-bottom: 30px;">
+                <br />
                 I'm your learning mentor
               </h3>
               <p
@@ -1116,6 +947,7 @@ add your notes here...
                   margin: 0 5px;
                 "
               >
+                <br />
                 Whether you're studying CS in college or enrolled in a bootcamp,
                 or self-teaching yourself programming, one thing holds true, in
                 any case, you need to put in hours and hours of work to develop
@@ -1123,23 +955,33 @@ add your notes here...
                 <br />
                 <br />
                 Software is one of the highly paying industries where a college
-                degree isn't required to land your first job. However, in order
-                to get a programming job, you need to be equipped with specific
-                skills required in the industry. This skills-set comes in the
-                form of trending technologies you need to know, specific CS
-                topics you need to master, and also your ability to understand
-                the tech ecosystem properly.
+                degree isn't required to land your first job.
+                <br />
+                <br />
+                However, in order to get a programming job, you need to be
+                equipped with specific skills required in the industry.
+                <br />
+                <br />
+                This skills-set comes in the form of trending technologies you
+                need to know, specific CS topics you need to master, and also
+                your ability to understand the tech ecosystem properly.
                 <br />
                 <br />
                 I offer free mentorship for you so that you can accelerate your
                 learning and preparation towards your first programming job.
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <a
                   style="color: #1c809d;"
                   href="https://nerdaries.azurewebsites.net/"
                   target="_blank"
-                  >Click here to go to my mentorship website</a
+                  ><p style="text-align: center;">
+                    Click here to go to my mentorship website
+                  </p></a
                 >
               </p>
             </div>
