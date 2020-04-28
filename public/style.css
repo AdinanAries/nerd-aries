@@ -573,7 +573,7 @@ footer div img:hover {
 }
 .CopyrightContainer {
   padding-top: 30px;
-  height: 110px;
+  height: 95px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -698,6 +698,9 @@ footer div img:hover {
   }
   .loginBtn {
     margin: auto;
+  }
+  .CopyrightContainer {
+    height: 110px;
   }
 }
 @media only screen and (max-width: 320px) {
