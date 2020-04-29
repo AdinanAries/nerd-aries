@@ -295,6 +295,7 @@ main {
   width: fit-content;
   margin: auto;
   margin-bottom: 40px;
+  margin-top: 130px;
   cursor: pointer;
 }
 #GoBackBtn img {

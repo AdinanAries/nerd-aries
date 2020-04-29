@@ -10,6 +10,7 @@ function showHomePage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("dashboard").style.display = "block";
+  document.querySelector("header").style.display = "flex";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showWebSitesPage() {
@@ -24,6 +25,7 @@ function showWebSitesPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("WebsitesPage").style.display = "block";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showVlogsPage() {
@@ -38,6 +40,7 @@ function showVlogsPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("VlogsPage").style.display = "block";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showTutoringPage() {
@@ -52,6 +55,7 @@ function showTutoringPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("TutoringPage").style.display = "block";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showMentoringPage() {
@@ -66,6 +70,7 @@ function showMentoringPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "block";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showPatreonsPage() {
@@ -80,6 +85,7 @@ function showPatreonsPage() {
   document.getElementById("MentoringPage").style.display = "none";
   document.getElementById("PatreonsPage").style.display = "block";
   document.getElementById("signupPage").style.display = "none";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showLoginPage() {
@@ -94,6 +100,7 @@ function showLoginPage() {
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "none";
   document.getElementById("signupPage").style.display = "none";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showSignupPage() {
@@ -108,6 +115,7 @@ function showSignupPage() {
   document.getElementById("TutoringPage").style.display = "none";
   document.getElementById("PatreonsPage").style.display = "none";
   document.getElementById("MentoringPage").style.display = "none";
+  document.querySelector("header").style.display = "none";
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
