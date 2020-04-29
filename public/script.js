@@ -196,6 +196,7 @@ $(window).scroll(function () {
     TopNavBarMenu.style.top = "0";
     TopNavBarMenu.style.width = "100vw";
     TopNavBarMenu.style.backgroundColor = "white";
+    $(".arrow").fadeOut("fast");
   } else {
     let TopNavBarMenu = document.getElementById("TopNavBarMenu");
     /*TopNavBarMenu.style.transition = "top 2s";*/
@@ -205,6 +206,7 @@ $(window).scroll(function () {
     TopNavBarMenu.style.top = "0";
     TopNavBarMenu.style.width = "auto";
     TopNavBarMenu.style.background = "none";
+    $(".arrow").fadeIn("fast");
   }
 });
 

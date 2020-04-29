@@ -448,7 +448,7 @@ footer div img:hover {
   height: 40px;
   padding: 2px;
   border-radius: 100%;
-  background-color: rgb(211, 243, 253);
+  background-color: rgb(160, 208, 248);
   cursor: pointer;
 }
 .shoppingCartParent,
@@ -590,6 +590,10 @@ a {
 .arrow {
   text-align: center;
   margin: 8% 0;
+  /*position: fixed;
+  z-index: 4;
+  left: 50%;
+  bottom: -30;*/
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -616,7 +620,6 @@ a {
   background-image: url("cssBackground.jpg");
   background-size: cover;
   min-width: 100vw;
-  margin-left: -10px;
   background-position: top;
   min-height: 100vh;
   position: relative;
@@ -627,12 +630,35 @@ a {
   padding-left: 100px;
 }
 .MyDisplayPic {
-  margin-top: 290px;
+  margin-top: 280px;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 100%;
   box-shadow: darkgray 0 3px 3px;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  /*animation-iteration-count: infinite;*/
+}
+.undoHover {
+  /*CSS transitions*/
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
 }
 .JumbotronMainText {
   font-size: 45px;
@@ -640,8 +666,42 @@ a {
   font-weight: bolder;
   color: #d63d00;
   text-shadow: 0 0 3px black;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  /*animation-iteration-count: infinite;*/
+}
+.JumbotronSmallText {
+  color: rgb(0, 255, 221);
+  text-shadow: 0 0 3px black;
+  font-weight: bolder;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /*animation-iteration-count: infinite;*/
 }
 @media only screen and (max-width: 700px) {
+  .JumbotronContent {
+    margin-top: -25px;
+  }
+  .JumbotronContentPaddingDiv {
+    padding-left: 10px;
+  }
+  .MyDisplayPic {
+    margin-top: 220px;
+    width: 80px;
+    height: 80px;
+  }
+  .JumbotronMainText {
+    font-size: 30px;
+  }
+  .JumbotronSmallText {
+    font-size: 14px;
+  }
+  .arrow {
+    position: fixed;
+    z-index: 4;
+    left: 46%;
+    bottom: 0;
+  }
   body {
     background-position: -200px top;
     background: none;
@@ -667,13 +727,16 @@ a {
   }
   header {
     padding-top: 5;
-    padding-bottom: 30px;
     margin: 0;
-    /*background-color: rgba(70, 248, 248, 0.562);*/
+    max-height: 80px;
+    background-color: #212121;
+  }
+  #NavbarRightIcons {
+    background-color: #4b188dce;
   }
   header div ul {
     display: none;
-    color: rgb(106, 176, 204);
+    color: rgb(106, 157, 204);
   }
   #dashboard ul {
     width: 100vw;
