@@ -617,7 +617,9 @@ a {
   }
 }
 .JumbotronContent {
-  background-image: url("cssBackground.jpg");
+  /*background-image: url("cssBackground.jpg");*/
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("cssBackground.jpg");
   background-size: cover;
   min-width: 100vw;
   background-position: top;
@@ -635,7 +637,7 @@ a {
   height: 100px;
   object-fit: cover;
   border-radius: 100%;
-  box-shadow: darkgray 0 3px 3px;
+  box-shadow: black 0 0 5px;
   animation-duration: 3s;
   animation-delay: 0.5s;
   /*animation-iteration-count: infinite;*/
@@ -664,7 +666,7 @@ a {
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
-  color: #d63d00;
+  color: #ff6528;
   text-shadow: 0 0 3px black;
   animation-duration: 3s;
   animation-delay: 1.5s;
