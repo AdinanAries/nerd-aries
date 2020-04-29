@@ -681,6 +681,11 @@ a {
 @media only screen and (max-width: 700px) {
   .JumbotronContent {
     margin-top: -25px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("cssBackground.jpg");
+    background-size: cover;
+    background-position: center top;
   }
   .JumbotronContentPaddingDiv {
     padding-left: 10px;
