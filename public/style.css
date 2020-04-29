@@ -686,15 +686,17 @@ a {
     padding-left: 10px;
   }
   .MyDisplayPic {
-    margin-top: 200px;
+    margin-top: 180px;
     width: 80px;
     height: 80px;
   }
   .JumbotronMainText {
     font-size: 30px;
+    color: #ff6262;
   }
   .JumbotronSmallText {
     font-size: 14px;
+    color: #c5f6ff;
   }
   .arrow {
     position: fixed;
