@@ -193,27 +193,18 @@ $(".loginBtn").click(function (event) {
 $("#signupLink").click(function (event) {
   showSignupPage();
 });
+$("#ScrollToTopIcon").click(function (event) {
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 70) {
-    let TopNavBarMenu = document.getElementById("TopNavBarMenu");
-    TopNavBarMenu.style.position = "fixed";
-    TopNavBarMenu.style.zIndex = 2;
-    /*TopNavBarMenu.style.transition = "top 2s";*/
-    TopNavBarMenu.style.left = "0";
-    TopNavBarMenu.style.top = "0";
-    TopNavBarMenu.style.width = "100vw";
-    TopNavBarMenu.style.backgroundColor = "white";
+    $("#ScrollTopNavBarMenu").slideDown("fast");
     $(".arrow").fadeOut("fast");
+    document.getElementById("ScrollTopNavBarMenu").style.display = "flex";
   } else {
-    let TopNavBarMenu = document.getElementById("TopNavBarMenu");
-    /*TopNavBarMenu.style.transition = "top 2s";*/
-    TopNavBarMenu.style.position = "initial";
-    TopNavBarMenu.style.zIndex = "initial";
-    TopNavBarMenu.style.left = "0";
-    TopNavBarMenu.style.top = "0";
-    TopNavBarMenu.style.width = "auto";
-    TopNavBarMenu.style.background = "none";
+    $("#ScrollTopNavBarMenu").slideUp("fast");
+    document.getElementById("ScrollTopNavBarMenu").style.display = "none";
     $(".arrow").fadeIn("fast");
   }
 });
