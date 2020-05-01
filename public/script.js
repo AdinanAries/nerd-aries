@@ -2,6 +2,7 @@ function showHomePage() {
   $("#GoBackBtn").css("display", "none");
   $(".NavLink").removeClass("active");
   $("#HomeLink").addClass("active");
+  $("#HomeLink2").addClass("active");
   document.getElementById("loginPage").style.display = "none";
   document.getElementById("WebsitesPage").style.display = "none";
   document.getElementById("VlogsPage").style.display = "none";
