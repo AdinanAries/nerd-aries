@@ -306,9 +306,28 @@
                   Software Engineer and Architect
                 </p>
                 <p class="JumbotronMainText animated zoomInUp">
-                  Designs, Builds, <br />Deploys and Maintains<br />
-                  Your Websites and Applications
+                  I Design, Build, <br />Deploy and Maintain<br />
+                  <!--Your Websites and Applications-->
                 </p>
+                <div id="WeatherContainer" class="animated flipInY">
+                  <div class="location">
+                    <h2 class="location-timezone"></h2>
+                    <p><img class="TodayWeatherIcon" /></p>
+                  </div>
+                  <div class="temprerature" style="margin-top: -20px;">
+                    <h2
+                      style="color: white; text-align: center;"
+                      class="temperature-degree"
+                    ></h2>
+                    <p style="color: white; text-align: center;">
+                      <small class="temperature-description"></small>
+                    </p>
+                    <p style="color: white; text-align: center;">
+                      <small class="temperature-city"></small>
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
               </div>
               <div class="speech-bubble">
                 <p id="introP" style="font-weight: bolder;">
@@ -1191,6 +1210,7 @@
       </footer>
     </div>
     <script src="script.js"></script>
+    <script src="weather.js"></script>
   </body>
   <script>
     //alert(document.body.scrollHeight);

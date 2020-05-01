@@ -707,7 +707,29 @@ a {
   animation-delay: 1s;
   /*animation-iteration-count: infinite;*/
 }
+#WeatherContainer {
+  position: absolute;
+  right: 150px;
+  top: 120px;
+  z-index: -1;
+}
 @media only screen and (max-width: 700px) {
+  #WeatherContainer {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    z-index: -1;
+    animation-delay: 3s;
+    animation-duration: 3s;
+  }
+  #WeatherContainer p,
+  #WeatherContainer h2 {
+    font-size: 14px;
+  }
+  #WeatherContainer img {
+    width: 80px;
+    height: 80px;
+  }
   .JumbotronContent {
     margin-top: -25px;
     width: 100%;
@@ -720,7 +742,7 @@ a {
     padding-left: 10px;
   }
   .MyDisplayPic {
-    margin-top: 180px;
+    margin-top: 230px;
     width: 80px;
     height: 80px;
   }
