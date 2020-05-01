@@ -144,6 +144,36 @@ function showtutoringPageIntro() {
   $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 
+var CollapseNotifications = () => {
+  $("#notificationsContainer").slideUp("fast");
+};
+var ShowNotifications = () => {
+  $("#notificationsContainer").slideDown("fast");
+};
+
+var CollapseShoppingCart = () => {
+  $("#ShoppingCartContainer").slideUp("fast");
+};
+var ShowShoppingCart = () => {
+  $("#ShoppingCartContainer").slideDown("fast");
+};
+
+$("#ShoppingCartBtn").click((event) => {
+  ShowShoppingCart();
+});
+
+$("#CloseShoppingCartBtn").click((event) => {
+  CollapseShoppingCart();
+});
+
+$("#NotificationsBtn").click((event) => {
+  ShowNotifications();
+});
+
+$("#CloseNotificationsBtn").click((event) => {
+  CollapseNotifications();
+});
+
 $("#GoBackBtn").click(function (event) {
   showHomePage();
 });

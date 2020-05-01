@@ -112,21 +112,36 @@
             </ul>
             <ul style="display: block;">
               <li class="socialIcons">
-                <i class="fa fa-facebook-f iconHover" style="font-size: 22px;">
-                </i
-                ><i
-                  class="fa fa-twitter iconHover"
-                  style="font-size: 22px; margin-left: 20px;"
-                >
-                </i
-                ><i
-                  class="fa fa-github iconHover"
-                  style="font-size: 22px; margin-left: 20px;"
-                ></i
-                ><i
-                  class="fa fa-linkedin iconHover"
-                  style="font-size: 22px; margin-left: 20px;"
-                ></i>
+                <a
+                  href="https://www.facebook.com/mohammed.adinan.58"
+                  target="_blank"
+                  ><i
+                    class="fa fa-facebook-f iconHover"
+                    style="font-size: 22px;"
+                  >
+                  </i
+                ></a>
+                <a href="" target="_blank"
+                  ><i
+                    class="fa fa-twitter iconHover"
+                    style="font-size: 22px; margin-left: 20px;"
+                  >
+                  </i
+                ></a>
+                <a href="https://github.com/AdinanAries" target="_blank"
+                  ><i
+                    class="fa fa-github iconHover"
+                    style="font-size: 22px; margin-left: 20px;"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/mohammed-adinan-67b23718a/"
+                  target="_blank"
+                  ><i
+                    class="fa fa-linkedin iconHover"
+                    style="font-size: 22px; margin-left: 20px;"
+                  ></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -144,11 +159,11 @@
                 <sup>logout</sup><img src="BlueLogoutIcon.png" alt="" />
               </div>
             </div-->
-            <div class="shoppingCartParent">
+            <div id="ShoppingCartBtn" class="shoppingCartParent">
               <img class="shoppingCart" src="ShoppingCartIcon.png" alt="" />
               <div class="shoppingCartItemCount">0</div>
             </div>
-            <div class="NotificationsParent">
+            <div id="NotificationsBtn" class="NotificationsParent">
               <img class="Notifications" src="NotificationsIcon.png" alt="" />
               <div class="NotificationsItemCount">0</div>
             </div>
@@ -171,6 +186,41 @@
           </div>
         </header>
         <main>
+          <div id="notificationsContainer">
+            <i
+              id="CloseNotificationsBtn"
+              style="font-size: 35px;"
+              class="closeIcon fa fa-times-circle"
+            ></i>
+            <p
+              style="
+                color: white;
+                text-align: center;
+                font-weight: bolder;
+                padding: 5px;
+              "
+            >
+              Notifications
+            </p>
+          </div>
+          <div id="ShoppingCartContainer">
+            <i
+              id="CloseShoppingCartBtn"
+              style="font-size: 35px;"
+              class="closeIcon fa fa-times-circle"
+            ></i>
+
+            <p
+              style="
+                color: white;
+                text-align: center;
+                font-weight: bolder;
+                padding: 5px;
+              "
+            >
+              Shopping Cart
+            </p>
+          </div>
           <div id="GoBackBtn">
             <img src="HomeButton.png" alt="" />
             <!--p

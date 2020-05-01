@@ -712,7 +712,35 @@ a {
   right: 150px;
   top: 120px;
   z-index: -1;
+  animation-delay: 3s;
+  animation-duration: 3s;
 }
+#notificationsContainer,
+#ShoppingCartContainer {
+  display: none;
+  max-width: 400px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.856);
+  right: 0;
+  top: 0;
+  z-index: 6;
+}
+.closeIcon {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: red;
+  cursor: pointer;
+}
+.socialIcons a {
+  color: rgb(106, 176, 204);
+}
+.socialIcons a i:hover {
+  color: crimson !important;
+}
+
 @media only screen and (max-width: 700px) {
   #WeatherContainer {
     position: absolute;
