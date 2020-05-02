@@ -488,7 +488,7 @@ footer div img:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: fit-content;
+  /*width: fit-content;*/
   margin-top: 20px;
   position: relative;
   z-index: 3;
@@ -515,7 +515,7 @@ footer div img:hover {
   padding: 4px;
   border-radius: 100%;
   color: white;
-  max-height: 8px;
+  height: 8px;
   min-width: 8px;
   text-align: center;
   margin-left: -25px;
