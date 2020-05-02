@@ -55,7 +55,7 @@
           Mentoring
         </li>
         <li class="PatreonsPageLink NavLink" id="PatreonsLink">
-          Patrons
+          About
         </li>
       </ul>
       <i id="ScrollToTopIcon" class="fa fa-arrow-circle-up"></i>
@@ -86,7 +86,7 @@
                 Mentoring
               </li>
               <li class="PatreonsPageLink NavLink" id="PatreonsLink">
-                Patrons
+                About
               </li>
             </ul>
             <!--table>
@@ -159,10 +159,10 @@
                 <sup>logout</sup><img src="BlueLogoutIcon.png" alt="" />
               </div>
             </div-->
-            <div id="ShoppingCartBtn" class="shoppingCartParent">
+            <!--div id="ShoppingCartBtn" class="shoppingCartParent">
               <img class="shoppingCart" src="ShoppingCartIcon.png" alt="" />
               <div class="shoppingCartItemCount">0</div>
-            </div>
+            </div-->
             <div id="NotificationsBtn" class="NotificationsParent">
               <img class="Notifications" src="NotificationsIcon.png" alt="" />
               <div class="NotificationsItemCount">0</div>
@@ -483,12 +483,17 @@
                 <li class="PatreonsPageLink">
                   <div>
                     <div style="margin: auto; width: fit-content;">
-                      <img class="optionsIcon" src="PatreonIcon.png" alt="" />
+                      <img
+                        style="background-color: #fa6a6a;"
+                        class="optionsIcon"
+                        src="AboutIcon2.png"
+                        alt=""
+                      />
                     </div>
-                    <p>Patrons</p>
+                    <p>About</p>
                     <small style="margin-top: 5px; color: rgb(243, 114, 9);"
-                      >Buy or sell academic materials, or donate to the
-                      cause.</small
+                      >Are you interested in finding out more about me?
+                      ...</small
                     >
                   </div>
                 </li>
@@ -765,28 +770,64 @@
                       margin: 0 5px;
                     "
                   >
-                    Think of your website as a fancy car.
+                    As a business owner you are always looking for ways to save
+                    money and make your business more profitable. So using a
+                    free generic website template may seem like a great option
+                    to save on your bottom line. You put care into the quality
+                    of the products and services you provide – wouldn’t you do
+                    the same for your website? Here are some reasons why you
+                    need a custom website – and shouldn’t settle for just a
+                    template.
                     <br />
                     <br />
-                    When rating a car, we often think about its features which
-                    make it better or worse than other cars. Some of the
-                    features are about the looks, the engine capacity, its
+                    1. We take the time to get to know you and your business. A
+                    free template can not begin to reflect what you want to
+                    portray about your business. We will take the time to get to
+                    know what YOU want and create a site that reflects that
+                    vision. <br />
+                    2. Higher Ranking in Search Engines. Custom sites are
+                    specially designed to appear higher in search engines,
+                    giving you an edge over your competitors. We can help you
+                    become more visible on the internet by creating a tailor
+                    made website that attracts the right people.
                     <br />
+                    3. We are here for you after your custom site launches. We
+                    are happy to help you maintain your site, or show you how to
+                    do it yourself. In fact, we included training with each site
+                    we design and are here to answer any questions you may have.
                     <br />
-                    efficiency, how comfortable it is inside, etc... you get the
-                    idea... This means that the external beauty of the car is
+                    4. Configuring and updating a free website is time
+                    consuming. Templates work great when you want to copy
+                    exactly what’s there. But put in your own information, and
+                    one size doesn’t always fit all.
                     <br />
+                    5. Coordinated brand recognition through social media, print
+                    media and web design. That’s right! Everything that has to
+                    do with your business can look the same and boost your
+                    visual recognition – which in turn will boost your business.
                     <br />
-                    only one of many things that can make it a great car, and of
-                    course, can determine how much the car costs.
+                    6. Adaptable to your business as it grows. Want to start
+                    small and perhaps later add a blog, e-commerce, photo
+                    gallery, or application? A custom website can grow with you.
                     <br />
+                    7. Access to premium features and design. As professional
+                    designers and web developers, we have access to professional
+                    versions of most frameworks and plugins that we share with
+                    our clients at no extra cost.
                     <br />
-                    When it comes to building your website, the statement above
-                    implies that the measure of your website's good and cost is
+                    8. Your business is one of a kind. Don’t blend in with other
+                    businesses using the same template. Your business is unique
+                    – let’s show everyone how it stands apart from the rest.
                     <br />
+                    9. Stronger Business Credibility. What are competitors and
+                    potential customers going to think when they see the name of
+                    a cookie cutter “free” template in your footer of your
+                    homepage? It most certainly will not stand out among the
+                    millions of other businesses who used the same template or
+                    speak to the uniqueness of your business.
                     <br />
-                    going to be based not only on the design or looks, but also,
-                    on what lies "under the hood" that makes it work.
+                    10. Something To Be Proud Of. You’re proud of your business.
+                    Let’s show it off to the rest of the world.
                   </p>
                 </div>
                 <div
@@ -832,43 +873,45 @@
                   padding: 5px;
                 "
               >
-                Add your information below, I'll reach out to you.
+                Add your information below to create account.
               </p>
               <div class="WebsiteEstimatesForm">
                 <fieldset>
-                  <legend>Add personal information</legend>
-                  <input
-                    id="firstName"
+                  <legend>Enter you full name</legend>
+                  <i style="font-size: 19px;" class="fa fa-user"></i
+                  ><input id="fullName" type="text" placeholder="fullname" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter your email</legend>
+                  <i class="fa fa-envelope"></i
+                  ><input id="email" type="email" placeholder="email" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter your mobile</legend>
+                  <i style="font-size: 25px;" class="fa fa-mobile"></i
+                  ><input id="mobile" type="text" placeholder="mobile" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter new password</legend>
+                  <i class="fa fa-key"></i
+                  ><input
+                    id="costEstimateFormPassword"
                     type="text"
-                    placeholder="enter your name"
-                  />
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="enter your email"
-                  />
-                  <input
-                    id="mobile"
-                    type="text"
-                    placeholder="enter your mobile number"
+                    placeholder="password"
                   />
                 </fieldset>
                 <fieldset>
-                  <legend>Create an account</legend>
-                  <input
-                    id="costEstimateFormPassword"
-                    type="text"
-                    placeholder="enter new password"
-                  />
-                  <input
+                  <legend>Confirm password</legend>
+                  <i class="fa fa-key"></i
+                  ><input
                     id="costEstimateFormConfirmPassword"
                     type="text"
-                    placeholder="confirm your password"
+                    placeholder="password"
                   />
                 </fieldset>
                 <input
                   class="submitBtn"
-                  style="margin-top: 10px;"
+                  style="margin-top: 10px; border-radius: 4px;"
                   type="submit"
                   value="Submit"
                 />
@@ -1005,8 +1048,7 @@
                     an exception; many of my students haven't been.
                     <br />
                     <br />
-                    Book your tutoring session by clicking on the next button
-                    and lets alleviate your pains.
+                    Book your tutoring session by clicking on the next button.
                   </p>
                 </div>
                 <div
@@ -1041,7 +1083,7 @@
                   text-align: center;
                 "
               >
-                Secure your tutoring time below
+                Book your tutoring time below
               </h3>
               <p
                 style="
@@ -1049,11 +1091,51 @@
                   font-weight: bolder;
                   margin: 10px;
                   padding: 5px;
-                  text-align: left;
                 "
               >
-                Fill out the form below to secure your tutoring session.
+                Add your information below to create account.
               </p>
+              <div class="TutoringSessionForm">
+                <fieldset>
+                  <legend>Enter you full name</legend>
+                  <i style="font-size: 19px;" class="fa fa-user"></i
+                  ><input id="fullName" type="text" placeholder="fullname" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter your email</legend>
+                  <i class="fa fa-envelope"></i
+                  ><input id="email" type="email" placeholder="email" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter your mobile</legend>
+                  <i style="font-size: 25px;" class="fa fa-mobile"></i
+                  ><input id="mobile" type="text" placeholder="mobile" />
+                </fieldset>
+                <fieldset>
+                  <legend>Enter new password</legend>
+                  <i class="fa fa-key"></i
+                  ><input
+                    id="costEstimateFormPassword"
+                    type="text"
+                    placeholder="password"
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Confirm password</legend>
+                  <i class="fa fa-key"></i
+                  ><input
+                    id="costEstimateFormConfirmPassword"
+                    type="text"
+                    placeholder="password"
+                  />
+                </fieldset>
+                <input
+                  class="submitBtn"
+                  style="margin-top: 10px; border-radius: 4px;"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
               <div
                 style="
                   display: flex;
@@ -1110,7 +1192,7 @@
                 <br />
                 <br />
                 I offer free mentorship for you so that you can accelerate your
-                learning and preparation towards your first programming job.
+                learning and prepare for your first programming job.
                 <br />
                 <br />
                 <br />

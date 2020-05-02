@@ -425,33 +425,36 @@ footer div img:hover {
   margin-left: -11px;
   margin-top: -22px;
 }
-.WebsiteEstimatesForm fieldset {
+.WebsiteEstimatesForm fieldset,
+.TutoringSessionForm fieldset {
   color: #408f9d;
   border: 1px solid #408f9d;
   padding: 5px;
   border-radius: 4px;
   background-color: rgb(232, 248, 253);
-  max-width: 700px;
+  width: auto !important;
   margin: auto;
-  margin-top: 15px;
-  font-size: 20px;
 }
-.WebsiteEstimatesForm fieldset input {
-  width: 500px;
-  width: 95%;
+.WebsiteEstimatesForm fieldset input,
+.TutoringSessionForm fieldset input {
   margin: 5px 0;
-  border: 1px solid #1c809d;
-  border-radius: 4px;
-  padding: 10px;
-  background-color: rgb(211, 243, 253);
+  border: none;
+  background: none;
+  min-width: 250px;
 }
-.WebsiteEstimatesForm fieldset input[type="checkbox"] {
+.WebsiteEstimatesForm i,
+.TutoringSessionForm i {
+  margin-right: 10px;
+}
+.WebsiteEstimatesForm fieldset input[type="checkbox"],
+.TutoringSessionForm fieldset input[type="checkbox"] {
   width: 18px;
   margin: 4px;
   padding: 5px;
   border: none;
 }
-.WebsiteEstimatesForm fieldset textarea {
+.WebsiteEstimatesForm fieldset textarea,
+.TutoringSessionForm fieldset textarea {
   width: 95%;
   margin: 5px 0;
   border: 0;
