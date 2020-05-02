@@ -492,9 +492,9 @@ footer div img:hover {
   margin-top: 20px;
   position: relative;
   z-index: 3;
-  /*background-color: #c5f6ff;
+  /*background-color: #c5f6ff;*/
   height: 40px;
-  padding: 4px;
+  /*padding: 4px;
   border-radius: 100%;*/
 }
 .LoginBtnParent {
