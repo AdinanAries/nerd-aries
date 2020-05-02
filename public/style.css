@@ -903,7 +903,8 @@ a {
     margin-top: 10px;
   }
   .LoginBtnParent {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: #0f00226e;
     width: 100%;
     border-radius: 4px;
