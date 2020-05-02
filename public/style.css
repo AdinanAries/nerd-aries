@@ -151,15 +151,15 @@ header div ul li.active,
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  height: 100%;
-  /*background-color: #4286a554;*/
+  /*height: 100%;
+  background-color: #4286a554;*/
   /*padding: 4px;*/
   padding-top: 8px;
   margin-right: 20px;
   border-radius: 4px;
 }
 #NavbarRightIcons:hover {
-  background-color: #00728169;
+  /*background-color: #00728169;*/
 }
 .callUsBtn {
   background-color: aliceblue;
