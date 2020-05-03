@@ -322,7 +322,7 @@ main {
   width: fit-content;
   margin: auto;
   margin-bottom: 40px;
-  margin-top: 130px;
+  margin-top: 70px;
   cursor: pointer;
 }
 #GoBackBtn img {
@@ -905,7 +905,7 @@ a {
   .LoginBtnParent {
     display: flex;
     flex-direction: column;
-    background-color: #0f00226e;
+    /*background-color: #0f00226e;*/
     width: 100%;
     border-radius: 4px;
     text-align: center;
