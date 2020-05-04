@@ -765,6 +765,18 @@ a {
   background-color: darkslateblue;
   text-align: center;
 }
+#loginBtnAtProfilePage,
+#updateUserAccountBtn {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  background-color: darkslateblue;
+}
+#updateUserAccountBtn {
+  display: none;
+}
 .closeIcon {
   position: fixed;
   right: 10px;

@@ -4,8 +4,12 @@ let checkisPersonLoggedIn = () => {
   if (window.localStorage.getItem("UserInfo") === null) {
     document.getElementById("smallScreenloginBtn").style.display = "block";
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
+    document.getElementById("userPageProfilePhoto").style.display = "none";
+    document.getElementById("addProfilePhotoBtn").style.display = "none";
+    document.getElementById("loginBtnAtProfilePage").style.display = "block";
   } else if (window.localStorage.getItem("isLoggedIn") === "true") {
-    alert(window.localStorage.getItem("UserInfo"));
+    document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    //alert(window.localStorage.getItem("UserInfo"));
     let user = JSON.parse(window.localStorage.getItem("UserInfo"));
     document.getElementById("smallScreenloginBtn").style.display = "none";
     document.getElementById("smallScreenlogoutBtn").style.display = "block";
@@ -264,6 +268,10 @@ $("#BacktoTutoringIntroBtn").click(function (event) {
 $(".loginBtn").click(function (event) {
   showLoginPage();
 });
+$("#loginBtnAtProfilePage").click(function (event) {
+  CollapseUserInfoPage();
+  showLoginPage();
+});
 $("#signupLink").click(function (event) {
   showSignupPage();
 });
@@ -330,6 +338,12 @@ $(".responsive").slick({
   ],
 });
 
+//function to logout of the system
+function logoutMethod() {
+  window.localStorage.removeItem("UserInfo");
+  checkisPersonLoggedIn();
+}
+
 //functions for hitting backend using ui forms
 
 function registerUser() {
@@ -384,3 +398,9 @@ document.getElementById("signupFormSubmitBtn").addEventListener("click", () => {
     document.getElementById("confirmPasswordFld").value = "";
   } else registerUser();
 });
+
+document
+  .getElementById("smallScreenlogoutBtn")
+  .addEventListener("click", () => {
+    logoutMethod();
+  });
