@@ -1,29 +1,87 @@
 const express = require("express");
 const http = require("http");
+const mysql = require("mysql");
 const path = require("path");
+const uuid = require("uuid");
 
 const app = express();
 
 const server = http.createServer(app);
 
+//middlewares
 app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-//Routes
-
-let AddUser = (UserID, FullName, Email, Mobile) => {
+//db queries
+var dbConnectionProps = {
+  host: "127.0.0.1",
+  user: "root",
+  password: "Password@2020",
+  database: "nerdariesdb",
+};
+let AddUser = (FullName, Email, Mobile, Password, callback) => {
   //this handle adding all users to default user account
   //Profile Pictures will only on this table
+  let UserID = uuid.v4();
+  var connection = mysql.createConnection(dbConnectionProps);
+
+  connection.connect();
+
+  connection.query(
+    `INSERT INTO users (StringID, name, email, mobile) values ('${UserID}','${FullName}', '${Email}', '${Mobile}')`,
+    function (error, results) {
+      if (error) throw error;
+      GetUserInfoByInfo(FullName, Email, Mobile, (data) => {
+        AddPassword(data[0].id, Email, Password);
+        callback(data);
+      });
+    }
+  );
+
+  connection.end();
 };
 
 let AddPassword = (userID, UserEmail, UserPassword) => {
   //this handles adding passwords for all users
   //login table is a generic table for all clients regardless of type of user
+  let UserID = uuid.v4();
+  var connection = mysql.createConnection(dbConnectionProps);
+
+  connection.connect();
+
+  connection.query(
+    `INSERT INTO login (user_id, email, password) values ('${userID}','${UserEmail}', '${UserPassword}')`,
+    function (error, results) {
+      if (error) throw error;
+      console.log("User Added!");
+    }
+  );
+
+  connection.end();
 };
 
 let UpdateUserInfo = (UserID, FullName, Email, Mobile) => {
   //User this to Update userinformation on the user account table
 };
 
+let GetUserInfoByInfo = (fullName, Email, Mobile, callback) => {
+  var con = mysql.createConnection(dbConnectionProps);
+
+  con.connect(function (err) {
+    if (err) throw err;
+    con.query(
+      `SELECT * FROM users WHERE name = '${fullName}' and email = '${Email}' and mobile = '${Mobile}' `,
+      function (err, result, fields) {
+        if (err) throw err;
+        //console.log(result);
+        callback(result);
+      }
+    );
+  });
+};
+
+//Routes
 let GetUserInfo = (userID) => {
   //This function returns User object
 };
@@ -38,6 +96,14 @@ app.post("/login", (req, res) => {
 
 app.post("/signup", (req, res) => {
   //handles default signup
+  let fullname = req.body.name;
+  let email = req.body.email;
+  let password = req.body.password;
+  let mobile = req.body.mobile;
+  AddUser(fullname, email, mobile, password, (data) => {
+    console.table(data[0]);
+    res.json(data[0]);
+  });
 });
 
 app.post("/RegisterWebsiteClient", (req, res) => {

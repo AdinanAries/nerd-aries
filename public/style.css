@@ -474,7 +474,8 @@ footer div img:hover {
 #UserAvatar,
 .shoppingCart,
 .Notifications,
-.loginBtnIcon {
+.loginBtnIcon,
+.logoutBtnIcon {
   width: 40px;
   height: 40px;
   padding: 2px;
@@ -484,7 +485,8 @@ footer div img:hover {
 }
 .shoppingCartParent,
 .NotificationsParent,
-.LoginBtnParent {
+.LoginBtnParent,
+.LogoutBtnParent {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -502,7 +504,8 @@ footer div img:hover {
 }
 .shoppingCart,
 .Notifications,
-.loginBtnIcon {
+.loginBtnIcon,
+.logoutBtnIcon {
   background: none;
   border-radius: 0;
 }
@@ -719,7 +722,7 @@ a {
   animation-duration: 3s;
 }
 #notificationsContainer,
-#ShoppingCartContainer {
+#UserInfoContainer {
   display: none;
   max-width: 400px;
   width: 100%;
@@ -729,6 +732,38 @@ a {
   right: 0;
   top: 0;
   z-index: 6;
+}
+#UserInfoContainer {
+  background-color: white;
+}
+#userPageProfilePhoto,
+#userPageProfileAvatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+#addProfilePhotoBtn {
+  padding-bottom: 30px;
+}
+.UserPageInput {
+  border: none;
+  margin-top: 5px;
+  padding: 5px;
+  min-width: 180px;
+}
+#choosePhotoLabel,
+#choosePhotoInput,
+#uploadPhotoBtn {
+  display: none;
+}
+#uploadPhotoBtn {
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  border-radius: 4px;
+  background-color: darkslateblue;
+  text-align: center;
 }
 .closeIcon {
   position: fixed;
@@ -901,10 +936,12 @@ a {
   }
   .shoppingCartParent,
   .NotificationsParent,
-  .LoginBtnParent {
+  .LoginBtnParent,
+  .LogoutBtnParent {
     margin-top: 10px;
   }
-  .LoginBtnParent {
+  .LoginBtnParent,
+  .LogoutBtnParent {
     display: flex;
     flex-direction: column;
     /*background-color: #0f00226e;*/
@@ -913,7 +950,8 @@ a {
     text-align: center;
     padding-bottom: 4px;
   }
-  .loginBtn {
+  .loginBtn,
+  .logoutBtn {
     margin: auto;
   }
   .CopyrightContainer {

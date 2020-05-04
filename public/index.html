@@ -148,7 +148,7 @@
           <div id="NavbarRightIcons">
             <table>
               <tr>
-                <td>
+                <td id="UserInfoBtn">
                   <div id="UserAvatarContainer" style="margin: auto;">
                     <img id="UserAvatar" src="UserAvatar.png" alt="" />
                   </div>
@@ -182,13 +182,24 @@
               </tr>
               <tr>
                 <td>
-                  <div class="LoginBtnParent">
+                  <div id="smallScreenloginBtn" class="LoginBtnParent">
                     <img
                       class="loginBtn loginBtnIcon"
                       src="BlueLoginIcon.png"
                       alt=""
                     />
                     <p style="color: #1c809d; text-align: center;">login</p>
+                  </div>
+                  <div id="smallScreenlogoutBtn" class="LogoutBtnParent">
+                    <img
+                      class="logoutBtn logoutBtnIcon"
+                      style="width: 25px; height: auto;"
+                      src="GreenLogoutIcon.png"
+                      alt=""
+                    />
+                    <p style="color: #00816b; text-align: center;">
+                      <small>logout</small>
+                    </p>
                   </div>
                 </td>
               </tr>
@@ -221,23 +232,86 @@
               Notifications
             </p>
           </div>
-          <div id="ShoppingCartContainer">
+          <div id="UserInfoContainer">
             <i
-              id="CloseShoppingCartBtn"
+              id="CloseUserInfoBtn"
               style="font-size: 35px;"
               class="closeIcon fa fa-times-circle"
             ></i>
 
-            <p
-              style="
-                color: white;
-                text-align: center;
-                font-weight: bolder;
-                padding: 5px;
-              "
-            >
-              Shopping Cart
+            <p style="text-align: center; font-weight: bolder; padding: 5px;">
+              Your account
             </p>
+            <div style="margin-top: 40px; padding: 5px;">
+              <table>
+                <tbody>
+                  <tr>
+                    <td style="text-align: center;">
+                      <img id="userPageProfilePhoto" src="puppy.jpg" />
+                      <p>
+                        <img
+                          style="background-color: #eee; padding: 5px;"
+                          id="userPageProfileAvatar"
+                          src="UserAvatar.png"
+                        />
+                      </p>
+                      <p id="addProfilePhotoBtn">
+                        <img
+                          src="AddPhotoImg.png"
+                          style="width: 30px;"
+                          alt=""
+                        />
+                        <sup> Add Photo</sup>
+                      </p>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p id="choosePhotoLabel">chose photo:</p>
+                    </td>
+                    <td>
+                      <input
+                        id="choosePhotoInput"
+                        style="margin-left: 10px; width: 180px;"
+                        type="file"
+                      />
+                      <p id="uploadPhotoBtn">upload photo</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>name:</td>
+                    <td>
+                      <input
+                        id="userPageUserName"
+                        class="UserPageInput"
+                        type="text"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>email:</td>
+                    <td>
+                      <input
+                        id="userPageUserEmail"
+                        class="UserPageInput"
+                        type="text"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mobile:</td>
+                    <td>
+                      <input
+                        id="userPageUserMobile"
+                        class="UserPageInput"
+                        type="text"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div id="GoBackBtn">
             <img src="HomeButton.png" alt="" />
@@ -327,29 +401,37 @@
               <fieldset class="loginInputFld">
                 <legend>Enter your name</legend>
                 <span class="fa fa-user"></span>
-                <input type="text" placeholder="full name" />
+                <input id="nameFld" type="text" placeholder="full name" />
               </fieldset>
               <fieldset class="loginInputFld">
                 <legend>Enter your email</legend>
                 <span class="fa fa-envelope"></span>
-                <input type="email" placeholder="email" />
+                <input id="emailFld" type="email" placeholder="email" />
               </fieldset>
               <fieldset class="loginInputFld">
                 <legend>Enter your mobile</legend>
                 <span style="font-size: 25px;" class="fa fa-mobile"></span>
-                <input type="text" placeholder="mobile" />
+                <input id="mobileFld" type="text" placeholder="mobile" />
               </fieldset>
               <fieldset class="loginInputFld">
                 <legend>Enter your Password</legend>
                 <span class="fa fa-key"></span>
-                <input type="password" placeholder="password" />
+                <input
+                  id="passwordFld"
+                  type="password"
+                  placeholder="password"
+                />
               </fieldset>
               <fieldset class="loginInputFld">
                 <legend>Confirm your Password</legend>
                 <span class="fa fa-key"></span>
-                <input type="password" placeholder="password" />
+                <input
+                  id="confirmPasswordFld"
+                  type="password"
+                  placeholder="password"
+                />
               </fieldset>
-              <div class="submitBtn signupSubmitBtn">
+              <div id="signupFormSubmitBtn" class="submitBtn signupSubmitBtn">
                 <span class="fa fa-sign-in" style="font-size: 20px;"></span>
                 Signup
               </div>
@@ -445,11 +527,13 @@
                 >
                 <br />
                 <br />
-                Hi, I'm Nerd Aries. I'm a software engineer and architect. I've
-                been in technology for almost 9 years. I made this website for
-                you... so that you can reach out to me.<!--my clients and students...-->
-                <!--Hey lithesia, welcome back!-->
-                <!--What brings you here today?-->
+                <span id="introspan">
+                  Hi, I'm Nerd Aries. I'm a software engineer and architect.
+                  I've been in technology for almost 9 years. I made this
+                  website for you... so that you can reach out to me.<!--my clients and students...-->
+                  <!--Hey lithesia, welcome back!-->
+                  <!--What brings you here today?-->
+                </span>
               </p>
               <div class="sectionSeperatorParent">
                 <h2 class="sectionSeperator">
