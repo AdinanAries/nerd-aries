@@ -1,4 +1,4 @@
-window.localStorage.setItem("isLoggedIn", "true");
+//window.localStorage.setItem("isLoggedIn", "true");
 
 let checkisPersonLoggedIn = () => {
   if (window.localStorage.getItem("UserInfo") === null) {
@@ -7,8 +7,11 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("userPageProfilePhoto").style.display = "none";
     document.getElementById("addProfilePhotoBtn").style.display = "none";
     document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    document.getElementById("userPageUserName").value = "";
+    document.getElementById("userPageUserEmail").value = "";
+    document.getElementById("userPageUserMobile").value = "";
   } else if (window.localStorage.getItem("isLoggedIn") === "true") {
-    document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    document.getElementById("loginBtnAtProfilePage").style.display = "none";
     //alert(window.localStorage.getItem("UserInfo"));
     let user = JSON.parse(window.localStorage.getItem("UserInfo"));
     document.getElementById("smallScreenloginBtn").style.display = "none";
@@ -31,6 +34,14 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("userPageUserEmail").value = user.email;
     document.getElementById("userPageUserMobile").value = user.mobile;
   } else {
+    document.getElementById("smallScreenloginBtn").style.display = "block";
+    document.getElementById("smallScreenlogoutBtn").style.display = "none";
+    document.getElementById("userPageProfilePhoto").style.display = "none";
+    document.getElementById("addProfilePhotoBtn").style.display = "none";
+    document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    document.getElementById("userPageUserName").value = "";
+    document.getElementById("userPageUserEmail").value = "";
+    document.getElementById("userPageUserMobile").value = "";
   }
 };
 
@@ -346,7 +357,7 @@ function logoutMethod() {
 
 //functions for hitting backend using ui forms
 
-function registerUser() {
+async function registerUser(callback) {
   let Name = document.getElementById("nameFld").value;
   let Email = document.getElementById("emailFld").value;
   let Mobile = document.getElementById("mobileFld").value;
@@ -365,6 +376,7 @@ function registerUser() {
       console.log(data);
       window.localStorage.setItem("UserInfo", JSON.stringify(data));
       window.localStorage.setItem("isLoggedIn", "true");
+      callback();
     },
   });
 }
@@ -396,7 +408,13 @@ document.getElementById("signupFormSubmitBtn").addEventListener("click", () => {
   ) {
     alert("Passwords don't match");
     document.getElementById("confirmPasswordFld").value = "";
-  } else registerUser();
+    document.getElementById("confirmPasswordFld").focus();
+  } else {
+    registerUser(() => {
+      checkisPersonLoggedIn();
+      showHomePage();
+    });
+  }
 });
 
 document
