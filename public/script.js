@@ -1,7 +1,7 @@
 window.localStorage.setItem("isLoggedIn", "true");
 
 let checkisPersonLoggedIn = () => {
-  if (window.localStorage.getItem("isLoggedIn") === "false") {
+  if (window.localStorage.getItem("UserInfo") === null) {
     document.getElementById("smallScreenloginBtn").style.display = "block";
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
   } else if (window.localStorage.getItem("isLoggedIn") === "true") {
