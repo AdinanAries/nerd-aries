@@ -745,6 +745,7 @@ a {
 }
 #addProfilePhotoBtn {
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .UserPageInput {
   border: none;
@@ -755,10 +756,12 @@ a {
 #choosePhotoLabel,
 #choosePhotoInput,
 #uploadPhotoBtn {
+  cursor: pointer;
   display: none;
 }
 #uploadPhotoBtn,
 #AddReviewBtn {
+  cursor: pointer;
   padding: 5px;
   margin: 5px;
   color: white;

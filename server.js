@@ -20,6 +20,7 @@ var dbConnectionProps = {
   password: "Password@2020",
   database: "nerdariesdb",
 };
+
 let AddUser = (FullName, Email, Mobile, Password, callback) => {
   //this handle adding all users to default user account
   //Profile Pictures will only on this table
@@ -81,17 +82,56 @@ let GetUserInfoByInfo = (fullName, Email, Mobile, callback) => {
   });
 };
 
-//Routes
-let GetUserInfo = (userID) => {
+let GetUserInfo = (userID, callback) => {
   //This function returns User object
+  var con = mysql.createConnection(dbConnectionProps);
+
+  con.connect(function (err) {
+    if (err) throw err;
+    con.query(`SELECT * FROM users WHERE id = '${userID}' `, function (
+      err,
+      result,
+      fields
+    ) {
+      if (err) throw err;
+      //console.log(result);
+      callback(result);
+    });
+  });
 };
 
+let ProcessLogin = (email, password, callback) => {
+  var con = mysql.createConnection(dbConnectionProps);
+
+  con.connect(function (err) {
+    if (err) throw err;
+    con.query(
+      `SELECT * FROM login WHERE email = '${email}' AND password = '${password}' `,
+      function (err, result, fields) {
+        if (err) throw err;
+        //console.log(result);
+
+        GetUserInfo(result[0].id, (data) => {
+          callback(data);
+        });
+      }
+    );
+  });
+};
+
+ProcessLogin("m.adinan@yahoo.com", "Password", (data) => {
+  console.table(data);
+});
+
+//Routes
 app.get("getUserInfo", (req, res) => {
   //this route handles getting user information
 });
 
 app.post("/login", (req, res) => {
   //handles default login
+  let email = req.body.email;
+  let password = req.body.password;
 });
 
 app.post("/signup", (req, res) => {
