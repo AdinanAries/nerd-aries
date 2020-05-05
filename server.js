@@ -109,19 +109,19 @@ let ProcessLogin = (email, password, callback) => {
       `SELECT * FROM login WHERE email = '${email}' AND password = '${password}' `,
       function (err, result, fields) {
         if (err) throw err;
-        //console.log(result);
-
-        GetUserInfo(result[0].id, (data) => {
-          callback(data);
-        });
+        if (result.length === 0) {
+          console.log("login unsuccessful");
+          callback([{ Msg: "check your email and password" }]);
+        } else {
+          //console.log(result);
+          GetUserInfo(result[0].id, (data) => {
+            callback(data);
+          });
+        }
       }
     );
   });
 };
-
-ProcessLogin("m.adinan@yahoo.com", "Password", (data) => {
-  console.table(data);
-});
 
 //Routes
 app.get("getUserInfo", (req, res) => {
@@ -132,6 +132,10 @@ app.post("/login", (req, res) => {
   //handles default login
   let email = req.body.email;
   let password = req.body.password;
+  ProcessLogin(email, password, (data) => {
+    console.table(data[0]);
+    res.json(data[0]);
+  });
 });
 
 app.post("/signup", (req, res) => {

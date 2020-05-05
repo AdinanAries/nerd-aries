@@ -191,12 +191,14 @@
                     <p style="color: #1c809d; text-align: center;">login</p>
                   </div>
                   <div id="smallScreenlogoutBtn" class="LogoutBtnParent">
-                    <img
-                      class="logoutBtn logoutBtnIcon"
-                      style="width: 25px; height: auto;"
-                      src="GreenLogoutIcon.png"
-                      alt=""
-                    />
+                    <p style="text-align: center;">
+                      <img
+                        class="logoutBtn logoutBtnIcon"
+                        style="width: 25px; height: auto; margin: auto;"
+                        src="GreenLogoutIcon.png"
+                        alt=""
+                      />
+                    </p>
                     <p style="color: #00816b; text-align: center;">
                       <small>logout</small>
                     </p>
@@ -379,15 +381,20 @@ add your review here...</textarea
               <fieldset class="loginInputFld">
                 <legend>Enter your Email</legend>
                 <span class="fa fa-envelope"></span>
-                <input type="email" placeholder="email" />
+                <input id="loginEmailFld" type="email" placeholder="email" />
               </fieldset>
               <fieldset class="loginInputFld">
                 <legend>Enter your Password</legend>
                 <span class="fa fa-key"></span
-                ><input type="password" placeholder="password" />
+                ><input
+                  id="loginPasswordFld"
+                  type="password"
+                  placeholder="password"
+                />
               </fieldset>
               <br />
               <div
+                id="LoginSubmitBtn"
                 class="submitBtn loginSubmitBtn"
                 style="margin-top: 0; padding-left: 15px; padding-right: 15px;"
               >

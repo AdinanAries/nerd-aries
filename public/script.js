@@ -1,7 +1,7 @@
-//window.localStorage.setItem("isLoggedIn", "true");
+//localStorage.setItem("isLoggedIn", "false");
 
 let checkisPersonLoggedIn = () => {
-  if (window.localStorage.getItem("UserInfo") === null) {
+  if (localStorage.getItem("UserInfo") === null) {
     document.getElementById("smallScreenloginBtn").style.display = "block";
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
     document.getElementById("userPageProfilePhoto").style.display = "none";
@@ -10,10 +10,10 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("userPageUserName").value = "";
     document.getElementById("userPageUserEmail").value = "";
     document.getElementById("userPageUserMobile").value = "";
-  } else if (window.localStorage.getItem("isLoggedIn") === "true") {
+  } else if (localStorage.getItem("isLoggedIn") === "true") {
     document.getElementById("loginBtnAtProfilePage").style.display = "none";
     //alert(window.localStorage.getItem("UserInfo"));
-    let user = JSON.parse(window.localStorage.getItem("UserInfo"));
+    let user = JSON.parse(localStorage.getItem("UserInfo"));
     document.getElementById("smallScreenloginBtn").style.display = "none";
     document.getElementById("smallScreenlogoutBtn").style.display = "block";
     document.getElementById("introspan").innerHTML = `welcome back ${
@@ -351,12 +351,31 @@ $(".responsive").slick({
 
 //function to logout of the system
 function logoutMethod() {
-  window.localStorage.removeItem("UserInfo");
+  localStorage.removeItem("UserInfo");
   checkisPersonLoggedIn();
 }
 
 //functions for hitting backend using ui forms
+function login(callback) {
+  let Email = document.getElementById("loginEmailFld").value;
+  let Password = document.getElementById("loginPasswordFld").value;
 
+  $.ajax({
+    type: "POST",
+    data: { email: Email, password: Password },
+    url: "/login",
+    success: function (data) {
+      console.log(data);
+      if (!data.id) {
+        alert(data.Msg);
+      } else {
+        localStorage.setItem("UserInfo", JSON.stringify(data));
+        localStorage.setItem("isLoggedIn", "true");
+        callback();
+      }
+    },
+  });
+}
 async function registerUser(callback) {
   let Name = document.getElementById("nameFld").value;
   let Email = document.getElementById("emailFld").value;
@@ -374,8 +393,8 @@ async function registerUser(callback) {
     url: "/signup",
     success: function (data) {
       console.log(data);
-      window.localStorage.setItem("UserInfo", JSON.stringify(data));
-      window.localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("UserInfo", JSON.stringify(data));
+      localStorage.setItem("isLoggedIn", "true");
       callback();
     },
   });
@@ -415,6 +434,13 @@ document.getElementById("signupFormSubmitBtn").addEventListener("click", () => {
       showHomePage();
     });
   }
+});
+
+document.getElementById("LoginSubmitBtn").addEventListener("click", () => {
+  login(() => {
+    checkisPersonLoggedIn();
+    showHomePage();
+  });
 });
 
 document
