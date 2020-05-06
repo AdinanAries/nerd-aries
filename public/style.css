@@ -712,7 +712,9 @@ a {
   font-weight: bolder;
   color: #007544;
   /*text-shadow: 0 0 3px black;*/
-  border-left: 5px solid #007544;
+  border-left: 10px solid #007544;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
   margin: 5px;
   background-color: white;
@@ -723,7 +725,9 @@ a {
 .JumbotronSmallText {
   color: rgb(0, 89, 255);
   /*text-shadow: 0 0 3px black;*/
-  border-left: 5px solid rgb(0, 89, 255);
+  border-left: 10px solid rgb(0, 89, 255);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
   margin: 5px;
   background-color: white;
@@ -846,7 +850,9 @@ a {
   background-color: white;
   padding: 10px;
   margin: 5px;
-  border-left: 5px solid rgb(216, 0, 0);
+  border-left: 10px solid rgb(216, 0, 0);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   max-width: 150px;
 }
 .socialIcons a {

@@ -290,6 +290,9 @@ $("#loginBtnAtProfilePage").click(function (event) {
 $("#signupLink").click(function (event) {
   showSignupPage();
 });
+$("#connectLink").click(function (event) {
+  showSignupPage();
+});
 $("#ScrollToTopIcon").click(function (event) {
   $("html, body").animate({ scrollTop: 0 }, "fast");
 });
