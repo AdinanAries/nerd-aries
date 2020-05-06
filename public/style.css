@@ -112,6 +112,7 @@ body {
 }
 #TopOnScrollIcon {
   margin-left: 50px;
+  margin-top: 8px;
 }
 header {
   display: flex;
@@ -206,8 +207,8 @@ header div ul li.active,
 }
 .NALogo,
 .JoinBtn {
-  width: 100px;
-  height: 40px;
+  width: 60px;
+  height: 25px;
   max-height: 70px;
   margin-right: 20px;
   padding: 5px;
@@ -476,8 +477,8 @@ footer div img:hover {
 .Notifications,
 .loginBtnIcon,
 .logoutBtnIcon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 2px;
   border-radius: 100%;
   background-color: rgb(160, 208, 248);
@@ -491,13 +492,16 @@ footer div img:hover {
   flex-direction: row;
   justify-content: space-around;
   /*width: fit-content;*/
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   position: relative;
   z-index: 3;
   /*background-color: #c5f6ff;*/
   height: 40px;
   /*padding: 4px;
   border-radius: 100%;*/
+}
+.NotificationsParent {
+  margin-top: 10px;
 }
 .LoginBtnParent {
   display: none;
@@ -521,7 +525,7 @@ footer div img:hover {
   height: 8px;
   min-width: 8px;
   text-align: center;
-  margin-left: -25px;
+  margin-left: -15px;
   margin-top: -5px;
   display: flex;
   flex-direction: column;
@@ -622,11 +626,11 @@ a {
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  /*margin: 8% 0;*/
   position: fixed;
   z-index: 5;
   left: 50%;
-  bottom: 300;
+  bottom: 20px;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -651,8 +655,8 @@ a {
 }
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("JumbotronBackground7.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("JumbotronBackground8.jpg");
   background-size: cover;
   min-width: 100vw;
   background-position: top;
@@ -663,9 +667,11 @@ a {
 }
 .JumbotronContentPaddingDiv {
   padding-left: 90px;
+  position: absolute;
+  left: 10px;
+  bottom: 120px;
 }
 .MyDisplayPic {
-  margin-top: 250px;
   margin-bottom: 20px;
   width: 100px;
   height: 100px;
@@ -853,8 +859,8 @@ a {
   .JumbotronContent {
     margin-top: -25px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("JumbotronBackground7.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("JumbotronBackground8.jpg");
     background-size: cover;
     background-position: center top;
   }
@@ -880,7 +886,7 @@ a {
     position: fixed;
     z-index: 4;
     left: 46%;
-    bottom: 0;
+    bottom: 20;
   }
   body {
     background-position: -200px top;
@@ -915,6 +921,7 @@ a {
   }
   #NavbarRightIcons {
     /*background-color: #4b188dce;*/
+    margin-right: 5px;
   }
   header div ul {
     display: none;
@@ -954,8 +961,8 @@ a {
   }
   .NALogo,
   .JoinBtn {
-    width: 110px;
-    height: 50px;
+    width: 60px;
+    height: 25px;
     padding: 5px;
     margin-right: 0;
   }
