@@ -676,8 +676,8 @@ a {
 .MyDisplayPic {
   margin-left: 5px;
   padding: 0;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 100%;
   /*box-shadow: black 0 0 5px;*/
@@ -889,7 +889,7 @@ a {
   }
 
   .JumbotronMainText {
-    font-size: 30px;
+    font-size: 27px;
   }
   .JumbotronSmallText {
     font-size: 14px;
