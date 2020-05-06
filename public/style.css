@@ -1030,8 +1030,8 @@ a {
   }
   #TopOnScrollIcon {
     margin-left: 10px;
-    width: 75px;
-    height: 35px;
+    /*width: 75px;
+    height: 30px;*/
   }
 }
 @media only screen and (max-width: 320px) {
