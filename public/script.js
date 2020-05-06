@@ -23,11 +23,15 @@ let checkisPersonLoggedIn = () => {
     if (user.profile_pic == null) {
       document.getElementById("userPageProfilePhoto").style.display = "none";
       document.getElementById("addProfilePhotoBtn").style.display = "block";
+      document.getElementById("addProfilePhotoBtnLabel").innerText =
+        "Add Photo";
       document.getElementById("userPageProfileAvatar").style.display = "block";
     } else {
       document.getElementById("userPageProfilePhoto").style.display = "block";
       document.getElementById("userPageProfilePhoto").setAttribute("src", "");
-      document.getElementById("addProfilePhotoBtn").style.display = "none";
+      document.getElementById("addProfilePhotoBtn").style.display = "block";
+      document.getElementById("addProfilePhotoBtnLabel").innerText =
+        "Change Photo";
       document.getElementById("userPageProfileAvatar").style.display = "none";
     }
     document.getElementById("userPageUserName").value = user.name;
@@ -37,7 +41,7 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("smallScreenloginBtn").style.display = "block";
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
     document.getElementById("userPageProfilePhoto").style.display = "none";
-    document.getElementById("addProfilePhotoBtn").style.display = "none";
+    document.getElementById("addProfilePhotoBtnLable").style.display = "none";
     document.getElementById("loginBtnAtProfilePage").style.display = "block";
     document.getElementById("userPageUserName").value = "";
     document.getElementById("userPageUserEmail").value = "";
@@ -355,7 +359,7 @@ function logoutMethod() {
   checkisPersonLoggedIn();
 }
 
-//functions for hitting backend using ui forms
+//Making ajax call here to backend
 function login(callback) {
   let Email = document.getElementById("loginEmailFld").value;
   let Password = document.getElementById("loginPasswordFld").value;
@@ -376,6 +380,7 @@ function login(callback) {
     },
   });
 }
+
 async function registerUser(callback) {
   let Name = document.getElementById("nameFld").value;
   let Email = document.getElementById("emailFld").value;
@@ -399,6 +404,128 @@ async function registerUser(callback) {
     },
   });
 }
+
+function RegisterWebsiteClient(callback) {
+  let Name = document.getElementById("WbstNameFld").value;
+  let Email = document.getElementById("WbstEmailFld").value;
+  let Mobile = document.getElementById("WbstMobileFld").value;
+  let Password = document.getElementById("WbstPasswordFld").value;
+
+  $.ajax({
+    type: "POST",
+    data: {
+      name: Name,
+      email: Email,
+      mobile: Mobile,
+      password: Password,
+    },
+    url: "/RegisterWebsiteClient",
+    success: function (data) {
+      console.log(data);
+      localStorage.setItem("UserInfo", JSON.stringify(data));
+      localStorage.setItem("isLoggedIn", "true");
+      callback();
+    },
+  });
+}
+
+function RegisterStudent(callback) {
+  let Name = document.getElementById("TtrNameFld").value;
+  let Email = document.getElementById("TtrEmailFld").value;
+  let Mobile = document.getElementById("TtrMobileFld").value;
+  let Password = document.getElementById("TtrPasswordFld").value;
+
+  $.ajax({
+    type: "POST",
+    data: {
+      name: Name,
+      email: Email,
+      mobile: Mobile,
+      password: Password,
+    },
+    url: "/RegisterStudent",
+    success: function (data) {
+      console.log(data);
+      localStorage.setItem("UserInfo", JSON.stringify(data));
+      localStorage.setItem("isLoggedIn", "true");
+      callback();
+    },
+  });
+}
+
+document.getElementById("TutoringSubmitBtn").addEventListener("click", () => {
+  if (
+    document.getElementById("TtrNameFld").value == "" &&
+    document.getElementById("TtrEmailFld").value == "" &&
+    document.getElementById("TtrMobileFld").value == "" &&
+    document.getElementById("TtrPasswordFld").value == "" &&
+    document.getElementById("TtrConfirmPasswordFld").value == ""
+  )
+    alert("please add your details");
+  else if (document.getElementById("TtrNameFld").value == "") {
+    alert("Please enter your full name");
+    document.getElementById("TtrNameFld").focus();
+  } else if (document.getElementById("TtrEmailFld").value == "") {
+    alert("Please enter your email");
+    document.getElementById("TtrEmailFld").focus();
+  } else if (document.getElementById("TtrMobileFld").value == "") {
+    alert("Please enter your mobile");
+    document.getElementById("TtrMobileFld").focus();
+  } else if (document.getElementById("TtrPasswordFld").value == "") {
+    alert("Please enter your password");
+    document.getElementById("TtrPasswordFld").focus();
+  } else if (
+    document.getElementById("TtrPasswordFld").value !==
+    document.getElementById("TtrConfirmPasswordFld").value
+  ) {
+    alert("Passwords don't match");
+    document.getElementById("TtrConfirmPasswordFld").value = "";
+    document.getElementById("TtrConfirmPasswordFld").focus();
+  } else {
+    RegisterStudent(() => {
+      checkisPersonLoggedIn();
+      showHomePage();
+    });
+  }
+});
+
+document
+  .getElementById("registerWbstClientConfirmBtn")
+  .addEventListener("click", () => {
+    if (
+      document.getElementById("WbstNameFld").value == "" &&
+      document.getElementById("WbstEmailFld").value == "" &&
+      document.getElementById("WbstMobileFld").value == "" &&
+      document.getElementById("WbstPasswordFld").value == "" &&
+      document.getElementById("WbstConfirmPasswordFld").value == ""
+    )
+      alert("please add your details");
+    else if (document.getElementById("WbstNameFld").value == "") {
+      alert("Please enter your full name");
+      document.getElementById("WbstNameFld").focus();
+    } else if (document.getElementById("WbstEmailFld").value == "") {
+      alert("Please enter your email");
+      document.getElementById("WbstEmailFld").focus();
+    } else if (document.getElementById("WbstMobileFld").value == "") {
+      alert("Please enter your mobile");
+      document.getElementById("WbstMobileFld").focus();
+    } else if (document.getElementById("WbstPasswordFld").value == "") {
+      alert("Please enter your password");
+      document.getElementById("WbstPasswordFld").focus();
+    } else if (
+      document.getElementById("WbstPasswordFld").value !==
+      document.getElementById("WbstConfirmPasswordFld").value
+    ) {
+      alert("Passwords don't match");
+      document.getElementById("WbstConfirmPasswordFld").value = "";
+      document.getElementById("WbstConfirmPasswordFld").focus();
+    } else {
+      RegisterWebsiteClient(() => {
+        checkisPersonLoggedIn();
+        showHomePage();
+      });
+    }
+  });
 
 document.getElementById("signupFormSubmitBtn").addEventListener("click", () => {
   if (

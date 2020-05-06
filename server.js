@@ -4,6 +4,8 @@ const mysql = require("mysql");
 const path = require("path");
 const uuid = require("uuid");
 
+const multer = require("multer");
+
 const app = express();
 
 const server = http.createServer(app);
@@ -64,6 +66,38 @@ let AddPassword = (userID, UserEmail, UserPassword) => {
 
 let UpdateUserInfo = (UserID, FullName, Email, Mobile) => {
   //User this to Update userinformation on the user account table
+};
+
+let addUserWebsiteClent = (userID) => {
+  var connection = mysql.createConnection(dbConnectionProps);
+
+  connection.connect();
+
+  connection.query(
+    `INSERT INTO website_clients (user_id) values ('${userID}')`,
+    function (error, results) {
+      if (error) throw error;
+      console.log("User is a website client!");
+    }
+  );
+
+  connection.end();
+};
+
+let addUserStudent = (userID) => {
+  var connection = mysql.createConnection(dbConnectionProps);
+
+  connection.connect();
+
+  connection.query(
+    `INSERT INTO students (user_id) values ('${userID}')`,
+    function (error, results) {
+      if (error) throw error;
+      console.log("User is a student!");
+    }
+  );
+
+  connection.end();
 };
 
 let GetUserInfoByInfo = (fullName, Email, Mobile, callback) => {
@@ -152,10 +186,28 @@ app.post("/signup", (req, res) => {
 
 app.post("/RegisterWebsiteClient", (req, res) => {
   //handles signup for new website clients
+  let fullname = req.body.name;
+  let email = req.body.email;
+  let password = req.body.password;
+  let mobile = req.body.mobile;
+  AddUser(fullname, email, mobile, password, (data) => {
+    console.table(data[0]);
+    addUserWebsiteClent(data[0].id);
+    res.json(data[0]);
+  });
 });
 
-app.post("/RegisterTutoringClient", (req, res) => {
+app.post("/RegisterStudent", (req, res) => {
   //hadles signup for new tutoring student
+  let fullname = req.body.name;
+  let email = req.body.email;
+  let password = req.body.password;
+  let mobile = req.body.mobile;
+  AddUser(fullname, email, mobile, password, (data) => {
+    console.table(data[0]);
+    addUserStudent(data[0].id);
+    res.json(data[0]);
+  });
 });
 
 app.post("/UploadProfilePicture", (req, res) => {
