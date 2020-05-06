@@ -120,7 +120,7 @@ header {
   padding-top: 5px;
   height: 55px;
   /*background-color: #c5c5c575;*/
-  background-color: rgba(0, 49, 78, 0.363);
+  /*background-color: rgba(0, 49, 78, 0.363);*/
   /*border-bottom-left-radius: 60px;*/
   border-radius: 4px;
   padding-bottom: 10px;
@@ -623,10 +623,10 @@ a {
 .arrow {
   text-align: center;
   margin: 8% 0;
-  /*position: fixed;
-  z-index: 4;
+  position: fixed;
+  z-index: 5;
   left: 50%;
-  bottom: -30;*/
+  bottom: 300;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -652,7 +652,7 @@ a {
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("cssBackground.jpg");
+    url("JumbotronBackground7.jpg");
   background-size: cover;
   min-width: 100vw;
   background-position: top;
@@ -662,10 +662,11 @@ a {
   margin-top: -40px;
 }
 .JumbotronContentPaddingDiv {
-  padding-left: 100px;
+  padding-left: 90px;
 }
 .MyDisplayPic {
-  margin-top: 280px;
+  margin-top: 250px;
+  margin-bottom: 20px;
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -715,8 +716,8 @@ a {
 }
 #WeatherContainer {
   position: absolute;
-  right: 150px;
-  top: 120px;
+  right: 230px;
+  top: 100px;
   z-index: -1;
   animation-delay: 3s;
   animation-duration: 3s;
@@ -836,7 +837,7 @@ a {
   #WeatherContainer {
     position: absolute;
     right: 90px;
-    top: 100px;
+    top: 70px;
     z-index: -1;
     animation-delay: 3s;
     animation-duration: 3s;
@@ -853,18 +854,17 @@ a {
     margin-top: -25px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("cssBackground.jpg");
+      url("JumbotronBackground7.jpg");
     background-size: cover;
     background-position: center top;
   }
   .JumbotronContentPaddingDiv {
     padding-left: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 100px;
   }
-  .MyDisplayPic {
-    margin-top: 230px;
-    width: 80px;
-    height: 80px;
-  }
+
   .JumbotronMainText {
     font-size: 30px;
     color: #ff6262;
@@ -872,6 +872,9 @@ a {
   .JumbotronSmallText {
     font-size: 14px;
     color: #c5f6ff;
+  }
+  .socialIcons a {
+    color: rgb(106, 176, 204);
   }
   .arrow {
     position: fixed;
@@ -892,6 +895,7 @@ a {
   .slick-next {
     display: none !important;
   }
+
   main {
     margin-top: -45px;
     padding-bottom: 0;
