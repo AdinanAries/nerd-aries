@@ -120,8 +120,10 @@ header {
   justify-content: space-between;
   padding-top: 5px;
   height: 55px;
+  position: relative;
+  z-index: 2;
   /*background-color: #c5c5c575;*/
-  /*background-color: rgba(0, 49, 78, 0.363);*/
+  /*background-color: rgba(0, 49, 78, 0.658);*/
   /*border-bottom-left-radius: 60px;*/
   border-radius: 4px;
   padding-bottom: 10px;
@@ -655,14 +657,14 @@ a {
 }
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("JumbotronBackground8.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("JumbotronBackground9.jpg");
   background-size: cover;
   min-width: 100vw;
   background-position: top;
   min-height: 100vh;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   margin-top: -40px;
 }
 .JumbotronContentPaddingDiv {
@@ -672,12 +674,13 @@ a {
   bottom: 120px;
 }
 .MyDisplayPic {
-  margin-bottom: 20px;
+  margin-left: 5px;
+  padding: 0;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 100%;
-  box-shadow: black 0 0 5px;
+  /*box-shadow: black 0 0 5px;*/
   animation-duration: 3s;
   animation-delay: 0.5s;
   /*animation-iteration-count: infinite;*/
@@ -706,15 +709,23 @@ a {
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
-  color: #ff6528;
-  text-shadow: 0 0 3px black;
+  color: #007544;
+  /*text-shadow: 0 0 3px black;*/
+  border-left: 5px solid #007544;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
   animation-duration: 3s;
   animation-delay: 1.5s;
   /*animation-iteration-count: infinite;*/
 }
 .JumbotronSmallText {
-  color: rgb(0, 255, 221);
-  text-shadow: 0 0 3px black;
+  color: rgb(0, 89, 255);
+  /*text-shadow: 0 0 3px black;*/
+  border-left: 5px solid rgb(0, 89, 255);
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
   font-weight: bolder;
   animation-duration: 3s;
   animation-delay: 1s;
@@ -830,8 +841,16 @@ a {
   color: red;
   cursor: pointer;
 }
+.socialIcons {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border-left: 5px solid rgb(216, 0, 0);
+  max-width: 150px;
+}
 .socialIcons a {
-  color: rgb(106, 176, 204);
+  /*color: rgb(106, 176, 204);*/
+  color: rgb(216, 0, 0);
 }
 .socialIcons a i:hover {
   color: crimson !important;
@@ -859,8 +878,6 @@ a {
   .JumbotronContent {
     margin-top: -25px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("JumbotronBackground8.jpg");
     background-size: cover;
     background-position: center top;
   }
@@ -873,14 +890,11 @@ a {
 
   .JumbotronMainText {
     font-size: 30px;
-    color: #ff6262;
   }
   .JumbotronSmallText {
     font-size: 14px;
-    color: #c5f6ff;
   }
   .socialIcons a {
-    color: rgb(106, 176, 204);
   }
   .arrow {
     position: fixed;
@@ -916,8 +930,6 @@ a {
   header {
     padding-top: 5;
     margin: 0;
-    /*background-color: #212121;*/
-    background: none;
   }
   #NavbarRightIcons {
     /*background-color: #4b188dce;*/
@@ -1000,7 +1012,9 @@ a {
   .NotificationsParent,
   .LoginBtnParent,
   .LogoutBtnParent {
-    margin-top: 10px;
+  }
+  .NotificationsParent {
+    padding-top: 5px;
   }
   .LoginBtnParent,
   .LogoutBtnParent {
