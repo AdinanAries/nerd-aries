@@ -659,7 +659,7 @@ a {
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
   background: linear-gradient(rgba(14, 207, 255, 0.9), rgba(195, 0, 255, 0.9)),
-    url("images/Photo.jpg");
+    url("./images/Photo.jpg");
   /*url("JumbotronBackground9.jpg");*/
   background-size: cover;
   min-width: 100vw;
