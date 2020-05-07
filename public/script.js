@@ -6,12 +6,12 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
     document.getElementById("userPageProfilePhoto").style.display = "none";
     document.getElementById("addProfilePhotoBtn").style.display = "none";
-    document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    //document.getElementById("loginBtnAtProfilePage").style.display = "block";
     document.getElementById("userPageUserName").value = "";
     document.getElementById("userPageUserEmail").value = "";
     document.getElementById("userPageUserMobile").value = "";
   } else if (localStorage.getItem("isLoggedIn") === "true") {
-    document.getElementById("loginBtnAtProfilePage").style.display = "none";
+    //document.getElementById("loginBtnAtProfilePage").style.display = "none";
     //alert(window.localStorage.getItem("UserInfo"));
     let user = JSON.parse(localStorage.getItem("UserInfo"));
     document.getElementById("smallScreenloginBtn").style.display = "none";
@@ -42,7 +42,7 @@ let checkisPersonLoggedIn = () => {
     document.getElementById("smallScreenlogoutBtn").style.display = "none";
     document.getElementById("userPageProfilePhoto").style.display = "none";
     document.getElementById("addProfilePhotoBtnLable").style.display = "none";
-    document.getElementById("loginBtnAtProfilePage").style.display = "block";
+    //document.getElementById("loginBtnAtProfilePage").style.display = "block";
     document.getElementById("userPageUserName").value = "";
     document.getElementById("userPageUserEmail").value = "";
     document.getElementById("userPageUserMobile").value = "";
@@ -229,6 +229,7 @@ $("#CloseUserInfoBtn").click((event) => {
 });
 
 $("#NotificationsBtn").click((event) => {
+  CollapseUserInfoPage();
   ShowNotifications();
 });
 
@@ -283,7 +284,7 @@ $("#BacktoTutoringIntroBtn").click(function (event) {
 $(".loginBtn").click(function (event) {
   showLoginPage();
 });
-$("#loginBtnAtProfilePage").click(function (event) {
+$("#smallScreenloginBtn").click(function (event) {
   CollapseUserInfoPage();
   showLoginPage();
 });
