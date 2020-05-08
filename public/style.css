@@ -621,7 +621,12 @@ footer div img:hover {
   justify-content: center;
   text-align: center;
 }
-
+.wholeServiceText {
+  margin-top: -120px;
+  margin-bottom: 45px;
+  color: #700000;
+  font-weight: initial;
+}
 a {
   color: white;
   text-decoration: none;
