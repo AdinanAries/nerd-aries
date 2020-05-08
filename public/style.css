@@ -747,8 +747,8 @@ a {
   right: 100px;
   top: 100px;
   z-index: -1;
-  animation-delay: 3s;
-  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-duration: 1s;
 }
 #notificationsContainer,
 #UserInfoContainer {
