@@ -310,10 +310,10 @@ $(window).scroll(function () {
   }
 });
 
+//lazyLoad: "ondemand",
 $(document).ready(function () {
   $(".AllAdditionalPhotos").slick({
     slide: ".ADPeach",
-    lazyLoad: "ondemand",
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
@@ -325,7 +325,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".additionalDashboardImages").slick({
     slide: ".slider-nav",
-    lazyLoad: "ondemand",
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -337,7 +336,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".ClientReviews").slick({
     slide: ".eachReview",
-    lazyLoad: "ondemand",
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
