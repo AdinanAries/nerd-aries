@@ -321,6 +321,8 @@ main {
   margin-top: -35px;
   padding: 10px 10px;
   margin-bottom: 5px;
+  background-color: rgb(208, 234, 250);
+  border-radius: 4px;
 }
 #dashboard ul li:hover {
   transform: scale(1.1);
