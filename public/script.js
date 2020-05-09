@@ -311,6 +311,30 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
+  $(".AllAdditionalPhotos").slick({
+    slide: ".ADPeach",
+    lazyLoad: "ondemand",
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 4000,
+  });
+});
+
+$(document).ready(function () {
+  $(".additionalDashboardImages").slick({
+    slide: ".slider-nav",
+    lazyLoad: "ondemand",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 4000,
+  });
+});
+
+$(document).ready(function () {
   $(".ClientReviews").slick({
     slide: ".eachReview",
     lazyLoad: "ondemand",
