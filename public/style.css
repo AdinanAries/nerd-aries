@@ -794,8 +794,8 @@ a {
 }
 #userPageProfilePhoto,
 #userPageProfileAvatar {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 100%;
 }
@@ -1107,6 +1107,9 @@ a {
     width: 100%;
     height: 70px !important;
     min-height: 70px !important;
+  }
+  #NotificationsBtn {
+    margin-top: -6px !important;
   }
 }
 @media only screen and (max-width: 320px) {
