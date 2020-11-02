@@ -697,10 +697,12 @@ a {
   background-size: cover;
   min-width: 100vw;
   background-position: top;
-  min-height: 70vh;
+  height: 65vh;
+  min-height: 400px;
   position: relative;
   z-index: 1;
   margin-top: -40px;
+  padding-top: 40px;
 }
 .JumbotronContentPaddingDiv {
   padding-left: 90px;
