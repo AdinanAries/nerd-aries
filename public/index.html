@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <div id="WeatherContainer" class="animated flipInY">
+    <div class="location">
+      <h2 class="location-timezone"></h2>
+      <p><img class="TodayWeatherIcon" /></p>
+    </div>
+    <div class="temprerature" style="margin-top: -20px;">
+      <h2
+        style="color: white; text-align: center;"
+        class="temperature-degree"
+      ></h2>
+      <p style="color: white; text-align: center;">
+        <small class="temperature-description"></small>
+      </p>
+      <p style="color: white; text-align: center;">
+        <small class="temperature-city"></small>
+      </p>
+      <p></p>
+    </div>
+  </div>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -74,6 +93,9 @@
     <div class="container">
       <div class="wrapper">
         <header class="animated fadeInDown">
+          <div id="NavbarRightIcons">
+            
+          </div>
           <div>
             <ul id="TopNavBarMenu">
               <li id="connectLink">
@@ -97,298 +119,20 @@
               <li class="MentoringPageLink NavLink" id="MentoringLink">
                 Mentoring
               </li>
-            </ul>
-            <!--table>
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      class="NALogo"
-                      src="images/NerdAriesLogo2.png"
-                      alt="Business Logo"
-                    />
-                  </td>
-                  <td>
-                    <div class="JoinBtn">Join</div>
-                  </td>
-                </tr>
-              </tbody>
-            </table-->
-            <ul style="display: block;">
-              <li id="logoLi">
+              <!--li id="logoLi">
                 <img class="NALogo" src="NerdsLogo.png" alt="Business Logo" />
-              </li>
+              </li-->
             </ul>
           </div>
-          <div id="NavbarRightIcons">
-            <table>
-              <tr>
-                <td id="UserInfoBtn">
-                  <div id="UserAvatarContainer" style="margin: auto;">
-                    <img id="UserAvatar" src="UserAvatar.png" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <!--div class="loginBtn">
-              <div class="loginBtnContent">
-                <sup>login</sup><img src="BlueLoginIcon.png" alt="" />
-              </div>
-            </div>
-            <div class="logoutBtn" style="display: none;">
-              <div class="logoutBtnContent">
-                <sup>logout</sup><img src="BlueLogoutIcon.png" alt="" />
-              </div>
-            </div-->
-              <!--div id="ShoppingCartBtn" class="shoppingCartParent">
-              <img class="shoppingCart" src="ShoppingCartIcon.png" alt="" />
-              <div class="shoppingCartItemCount">0</div>
-            </div-->
-
-              <tr>
-                <td></td>
-              </tr>
-              <!--a href="tel:17327999546"
-            ><div class="callUsBtn">
-              <img src="MobileIcon.png" style="width: 25px; height: 25px;" />
-              <p style="font-size: 17px; margin-left: 10px; margin-top: 5px;">
-                Call Us
-              </p>
-            </div></a
-        -->
-            </table>
-          </div>
+          
         </header>
         <main>
-          <div id="notificationsContainer">
-            <i
-              id="CloseNotificationsBtn"
-              style="font-size: 35px;"
-              class="closeIcon fa fa-times-circle"
-            ></i>
-            <p
-              style="
-                color: white;
-                text-align: center;
-                font-weight: bolder;
-                padding: 5px;
-              "
-            >
-              Notifications
-            </p>
-          </div>
-          <div id="UserInfoContainer">
-            <i
-              id="CloseUserInfoBtn"
-              style="font-size: 35px;"
-              class="closeIcon fa fa-times-circle"
-            ></i>
-
-            <p style="text-align: center; font-weight: bolder; padding: 5px;">
-              Your account
-            </p>
-            <div style="margin-top: 20px; padding: 5px;">
-              <table>
-                <tbody>
-                  <tr>
-                    <td style="text-align: center;">
-                      <img id="userPageProfilePhoto" src="puppy.jpg" />
-                      <p>
-                        <img
-                          style="background-color: #eee; padding: 5px;"
-                          id="userPageProfileAvatar"
-                          src="UserAvatar.png"
-                        />
-                      </p>
-                      <p id="addProfilePhotoBtn">
-                        <img
-                          src="AddPhotoImg.png"
-                          style="width: 30px;"
-                          alt=""
-                        />
-                        <sup id="addProfilePhotoBtnLabel"></sup>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p id="choosePhotoLabel">chose photo:</p>
-                    </td>
-                    <td>
-                      <input
-                        id="choosePhotoInput"
-                        style="margin-left: 10px; width: 180px;"
-                        type="file"
-                      />
-                      <p id="uploadPhotoBtn">upload photo</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>name:</td>
-                    <td>
-                      <input
-                        placeholder="N/A"
-                        id="userPageUserName"
-                        class="UserPageInput"
-                        type="text"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>email:</td>
-                    <td>
-                      <input
-                        placeholder="N/A"
-                        id="userPageUserEmail"
-                        class="UserPageInput"
-                        type="text"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>mobile:</td>
-                    <td>
-                      <input
-                        placeholder="N/A"
-                        id="userPageUserMobile"
-                        class="UserPageInput"
-                        type="text"
-                      />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p id="updateUserAccountBtn">update</p>
-              <!--p id="loginBtnAtProfilePage">login</p-->
-              <div class="sectionSeperatorParent" style="padding-top: 0;">
-                <h2 class="sectionSeperator">
-                  <span>Add review below</span>
-                </h2>
-                <div style="text-align: center;">
-                  <div class="rate" style="text-align: center;">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                  </div>
-                  <textarea style="width: 98%; height: 50px;">
-add your review here...</textarea
-                  >
-                  <p id="AddReviewBtn">Add Review</p>
-                </div>
-              </div>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div
-                        style="
-                          width: 100%;
-                          height: 60px;
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: space-between;
-                        "
-                      >
-                        <div class="empty"></div>
-                        <div style="display: flex; flex-direction: row;">
-                          <div
-                            style="
-                              margin-right: 20px;
-                              height: 40px;
-                              text-align: center;
-                            "
-                          >
-                            <div
-                              style="width: 40px; margin: 0; margin-left: 3px;"
-                              id="NotificationsBtn"
-                              class="NotificationsParent"
-                            >
-                              <img
-                                style="margin-right: 0;"
-                                class="Notifications"
-                                src="NotificationsIcon.png"
-                                alt=""
-                              />
-                              <div class="NotificationsItemCount">0</div>
-                            </div>
-                            <p style="margin-top: -10px;">
-                              <small
-                                style="color: #1c809d; text-align: center;"
-                              >
-                                updates
-                              </small>
-                            </p>
-                          </div>
-                          <div
-                            style="width: 40px;"
-                            id="smallScreenloginBtn"
-                            id="loginBtnAtProfilePage"
-                            class="LoginBtnParent"
-                          >
-                            <img
-                              class="loginBtn loginBtnIcon"
-                              src="BlueLoginIcon.png"
-                              alt=""
-                            />
-                            <p style="margin-top: -5px;">
-                              <small style="color: #1c809d; text-align: center;"
-                                >login</small
-                              >
-                            </p>
-                          </div>
-                          <div
-                            style="width: 40px;"
-                            id="smallScreenlogoutBtn"
-                            class="LogoutBtnParent"
-                          >
-                            <p style="text-align: center;">
-                              <img
-                                class="logoutBtn logoutBtnIcon"
-                                style="width: 25px; height: auto; margin: auto;"
-                                src="GreenLogoutIcon.png"
-                                alt=""
-                              />
-                            </p>
-                            <p style="color: #00816b; text-align: center;">
-                              <small>logout</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
           <div id="GoBackBtn">
             <img src="HomeButton.png" alt="" />
-            <!--p
-              style="
-                margin-top: -5px;
-                font-weight: bolder;
-                color: #1c809d;
-                width: fit-content;
-              "
-            >
-              Home
-              <br />
-              <small style="color: rgb(243, 114, 9);"
-                >click here to go to home page</small
-              >
-            </p-->
+            
           </div>
           <div id="loginPage">
             <div class="PageIntro">
-              <!--h3 style="color: #1c809d; margin-bottom: 30px;">
-                Provide your login information below
-              </h3-->
               <p
                 style="
                   font-weight: bolder;
@@ -520,10 +264,7 @@ add your review here...</textarea
                   />
                 </div>
                 <div class="socialIcons animated zoomInUp">
-                  <a
-                    href="https://www.facebook.com/mohammed.adinan.58"
-                    target="_blank"
-                    ><i
+                  <a rel="noopener noreferrer" href="https://www.facebook.com/mohammed.adinan.58" target="_blank" ><i
                       class="fa fa-facebook-f iconHover"
                       style="font-size: 22px;"
                     >
@@ -536,7 +277,8 @@ add your review here...</textarea
                     >
                     </i
                   ></a>
-                  <a href="https://github.com/AdinanAries" target="_blank"
+                  <a rel="noopener noreferrer" href="https://www.facebook.com/mohammed.adinan.58" target="_blank" ><i
+                    <a  href="https://github.com/AdinanAries" target="_blank"
                     ><i
                       class="fa fa-github iconHover"
                       style="font-size: 22px; margin-left: 20px;"
@@ -562,26 +304,7 @@ add your review here...</textarea
                   <!--Your Websites and Applications-->
                 </p>
               </div>
-              <div id="WeatherContainer" class="animated flipInY">
-                <div class="location">
-                  <h2 class="location-timezone"></h2>
-                  <p><img class="TodayWeatherIcon" /></p>
-                </div>
-                <div class="temprerature" style="margin-top: -20px;">
-                  <h2
-                    style="color: white; text-align: center;"
-                    class="temperature-degree"
-                  ></h2>
-                  <p style="color: white; text-align: center;">
-                    <small class="temperature-description"></small>
-                  </p>
-                  <p style="color: white; text-align: center;">
-                    <small class="temperature-city"></small>
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-
+              
               <div class="speech-bubble">
                 <p id="introP" style="font-weight: bolder;">
                   Hi, I'm Nerd Aries. I'm a software engineer and architect.

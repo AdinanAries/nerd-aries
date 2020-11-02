@@ -208,7 +208,7 @@ if (DayOfMonth.toString().charAt(DayOfMonth.toString().length - 1) === "3")
 //API code below
 
 //Getting User's Location Below
-var longit;
+var Longit;
 var Latit;
 
 var locationOptions = {

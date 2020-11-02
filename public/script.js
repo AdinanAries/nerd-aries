@@ -49,7 +49,7 @@ let checkisPersonLoggedIn = () => {
   }
 };
 
-checkisPersonLoggedIn();
+//checkisPersonLoggedIn();
 
 function showHomePage() {
   $("#GoBackBtn").css("display", "none");
@@ -596,8 +596,8 @@ document.getElementById("LoginSubmitBtn").addEventListener("click", () => {
   });
 });
 
-document
+/*document
   .getElementById("smallScreenlogoutBtn")
   .addEventListener("click", () => {
     logoutMethod();
-  });
+  });*/
