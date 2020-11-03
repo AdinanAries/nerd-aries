@@ -322,7 +322,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
   $(".additionalDashboardImages").slick({
     slide: ".slider-nav",
     slidesToShow: 1,
@@ -331,7 +331,11 @@ $(document).ready(function () {
     arrows: false,
     autoplaySpeed: 4000,
   });
-});
+});*/
+
+document.getElementById("main_home_page_welcome_vid").addEventListener("focuse", ()=>{
+  document.getElementById("main_home_page_welcome_vid").src += "?autoplay=1"
+})
 
 $(document).ready(function () {
   $(".ClientReviews").slick({
