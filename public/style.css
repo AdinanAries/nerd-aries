@@ -680,12 +680,10 @@ a {
 }
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(89, 129, 136, 0.9)),
-    url("Photo.jpg");
-  /*url("JumbotronBackground9.jpg");*/
+  background: linear-gradient(rgb(255, 255, 255), rgba(89, 129, 136, 0.925)),
+    url("images/myCollageImage\ \(3\).jpg");
   background-size: cover;
   min-width: 100vw;
-  background-position: top;
   height: 65vh;
   min-height: 400px;
   position: relative;
@@ -1061,7 +1059,6 @@ a {
   .LogoutBtnParent {
     display: flex;
     flex-direction: column;
-    /*background-color: #0f00226e;*/
     width: 100%;
     border-radius: 4px;
     text-align: center;
