@@ -84,15 +84,10 @@ a {
   margin: auto;
 }
 body {
-  /*background-image: url("BodyBackground5.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("BodyBackground2.jpg");
-  background-color: #445f6652;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   font-size: 16px;
-  /*font-family: Roboto;*/
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -123,10 +118,6 @@ header {
   height: 55px;
   position: relative;
   z-index: 2;
-  /*background-color: #c5c5c575;*/
-  /*background-color: rgba(0, 49, 78, 0.658);*/
-  /*border-bottom-left-radius: 60px;
-  background-color: white;*/
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -136,7 +127,7 @@ header div ul {
 header div ul li,
 #ScrollTopNavBarMenu ul li {
   font-weight: bolder;
-  color: rgb(106, 176, 204);
+  color: rgb(35, 104, 131);
   /*color: white;*/
   display: inline-block;
   text-decoration: none;
