@@ -82,14 +82,19 @@ a {
 }
 .wrapper {
   margin: auto;
+  width: 100vw;
+  max-width: 1300px;
+  overflow-x: hidden !important;
 }
 body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   font-size: 16px;
+  width: 100vw !important;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  font-size: 13px;
+  overflow-x: hidden !important;
 }
 #ScrollToTopIcon {
   display: none;
@@ -111,9 +116,6 @@ body {
   margin-top: 8px;
 }
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 5px;
   height: 55px;
   position: relative;
@@ -124,10 +126,17 @@ header {
 header div ul {
   list-style-type: none;
 }
+header div ul li i,
+#ScrollTopNavBarMenu ul li i {
+  color: #007544;
+  margin-right: 5px;
+  font-size: 15px !important;
+}
 header div ul li,
 #ScrollTopNavBarMenu ul li {
-  font-weight: bolder;
   color: rgb(35, 104, 131);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   /*color: white;*/
   display: inline-block;
   text-decoration: none;
@@ -680,7 +689,11 @@ a {
 }
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(rgb(255, 255, 255), rgba(94, 141, 148, 0.9)),
+  background: linear-gradient(
+      rgb(255, 255, 255),
+      rgba(184, 231, 243, 0.897),
+      rgb(255, 255, 255)
+    ),
     url("images/myCollageImage\ \(3\).jpg");
   background-size: cover;
   min-width: 100vw;
@@ -688,8 +701,7 @@ a {
   min-height: 400px;
   position: relative;
   z-index: 1;
-  margin-top: -40px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .JumbotronContentPaddingDiv {
   padding-left: 90px;
@@ -923,7 +935,8 @@ a {
   }
   .JumbotronContent {
     margin-top: -25px;
-    width: 100%;
+    padding-top: 40px;
+    width: 100vw;
     background-size: cover;
     background-position: center top;
   }
