@@ -680,7 +680,7 @@ a {
 }
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(rgb(255, 255, 255), rgba(89, 129, 136, 0.925)),
+  background: linear-gradient(rgb(255, 255, 255), rgba(94, 141, 148, 0.9)),
     url("images/myCollageImage\ \(3\).jpg");
   background-size: cover;
   min-width: 100vw;
