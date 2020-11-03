@@ -154,9 +154,7 @@ header div ul li.active,
   margin-right: 20px;
   border-radius: 4px;
 }
-#NavbarRightIcons:hover {
-  /*background-color: #00728169;*/
-}
+
 .callUsBtn {
   background-color: aliceblue;
   margin-top: 4px;
@@ -944,8 +942,6 @@ a {
   .JumbotronSmallText {
     font-size: 14px;
   }
-  .socialIcons a {
-  }
   .arrow {
     position: fixed;
     z-index: 4;
@@ -976,8 +972,6 @@ a {
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  .EachVlog {
-  }
   .loginBtn,
   .logoutBtn {
     padding-right: 0;
@@ -1003,11 +997,6 @@ a {
   #dashboard ul li {
     display: initial;
     width: 100%;
-    /*background-color: #c5f6ff;*/
-  }
-  #dashboard ul li div {
-    /*background-color: #c5f6ff;
-    width: 100%;*/
   }
   #dashboard ul li .optionsIcon {
     margin: auto;
@@ -1064,11 +1053,6 @@ a {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-  }
-  .shoppingCartParent,
-  .NotificationsParent,
-  .LoginBtnParent,
-  .LogoutBtnParent {
   }
   .NotificationsParent {
     padding-top: 5px;
