@@ -1023,10 +1023,14 @@ a {
     margin: auto;
   }
   #dashboard ul li {
-    display: initial;
+    display: block;
     width: 100%;
   }
   #site_option_ul li {
+    border-radius: 4px !important;
+    height: 220px;
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
   }
   .eachServiceContainer {
     height: 220px;
