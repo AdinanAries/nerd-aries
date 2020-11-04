@@ -1040,6 +1040,10 @@ a {
     max-width: 50px;
     max-height: 50px;
   }
+  #dashboard ul li:hover {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
   .sectionSeperatorParent {
     width: 100%;
   }
