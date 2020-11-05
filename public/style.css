@@ -6,6 +6,9 @@
   margin: 0;
   -webkit-appearance: none;
 }
+input:focus {
+  outline: none;
+}
 input[type="text"] {
   border-radius: 0;
 }
@@ -465,29 +468,48 @@ footer div img:hover {
   margin-left: -11px;
   margin-top: -22px;
 }
-.WebsiteEstimatesForm fieldset,
-.TutoringSessionForm fieldset {
-  color: #408f9d;
-  border: 1px solid #408f9d;
-  padding: 5px;
-  border-radius: 4px;
-  background-color: rgb(232, 248, 253);
-  width: auto !important;
+.WebsiteEstimatesForm,
+.signupInputs,
+.TutoringSessionForm {
+  max-width: 400px !important;
   margin: auto;
 }
-.WebsiteEstimatesForm fieldset input,
-.TutoringSessionForm fieldset input {
-  margin: 5px 0;
+.WebsiteEstimatesForm .container,
+.signupInputs .container,
+.TutoringSessionForm .container {
+  color: #408f9d;
+  border: 1px solid darkslateblue;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 3px;
+  background-color: rgb(233, 246, 250);
+
+  margin-bottom: 5px;
+}
+.WebsiteEstimatesForm .container p,
+.signupInputs .container p,
+.TutoringSessionForm .container p {
+  margin-bottom: 5px;
+  font-weight: bolder;
+  font-size: 12px;
+}
+.WebsiteEstimatesForm .container input,
+.signupInputs .container input,
+.TutoringSessionForm .container input {
+  padding: 5px;
   border: none;
-  background: none;
-  min-width: 250px;
+  background: none !important;
+  font-size: 15px;
+  width: calc(100% - 60px);
+  max-width: 320px;
 }
 .WebsiteEstimatesForm i,
+.signupInputs i,
 .TutoringSessionForm i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.WebsiteEstimatesForm fieldset input[type="checkbox"],
-.TutoringSessionForm fieldset input[type="checkbox"] {
+.WebsiteEstimatesForm .container input[type="checkbox"],
+.TutoringSessionForm .container input[type="checkbox"] {
   width: 18px;
   margin: 4px;
   padding: 5px;
@@ -510,6 +532,13 @@ footer div img:hover {
   border: 0;
   margin: 5px;
   min-width: 150px;
+}
+#registerWbstClientConfirmBtn,
+#TutoringSubmitBtn,
+#signUpFormSubmitBtn {
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 #UserAvatar,
 .shoppingCart,
@@ -545,13 +574,7 @@ footer div img:hover {
 .LoginBtnParent {
   display: none;
 }
-.shoppingCart,
-.Notifications,
-.loginBtnIcon,
-.logoutBtnIcon {
-  background: none;
-  border-radius: 0;
-}
+
 .shoppingCartItemCount,
 .NotificationsItemCount {
   width: fit-content;
@@ -570,42 +593,7 @@ footer div img:hover {
   flex-direction: column;
   justify-content: center;
 }
-.loginInputs,
-.signupInputs {
-  width: fit-content;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.loginInputs input[type="email"],
-.loginInputs input[type="password"],
-.loginInputs input[type="text"],
-.signupInputs input[type="email"],
-.signupInputs input[type="password"],
-.signupInputs input[type="text"] {
-  width: 250px;
-  margin: 5px;
-  background-color: rgb(211, 243, 253);
-  border: none;
-  font-size: 17px;
-}
-.loginInputFld {
-  margin-bottom: 10px;
-  text-align: left;
-  font-weight: bolder;
-  color: #1c809d;
-  background-color: rgb(211, 243, 253);
-  border-radius: 4px;
-  border: 1px solid #1c809d;
-  padding-left: 10px;
-}
-.loginSubmitBtn,
-.signupSubmitBtn {
-  width: 265px;
-  margin: auto;
-}
+
 .VlogCollection {
   margin-top: 10px;
 }

@@ -211,54 +211,6 @@
           </div>
           <div id="loginPage">
             <div class="PageIntro">
-              <p
-                style="
-                  font-weight: bolder;
-                  color: red;
-                  margin-top: 0;
-                  margin: 30px;
-                  font-size: 22px;
-                "
-              >
-                Login
-              </p>
-            </div>
-            <div class="loginInputs">
-              <fieldset class="loginInputFld">
-                <legend>Enter your Email</legend>
-                <span class="fa fa-envelope"></span>
-                <input id="loginEmailFld" type="email" placeholder="email" />
-              </fieldset>
-              <fieldset class="loginInputFld">
-                <legend>Enter your Password</legend>
-                <span class="fa fa-key"></span
-                ><input
-                  id="loginPasswordFld"
-                  type="password"
-                  placeholder="password"
-                />
-              </fieldset>
-              <br />
-              <div
-                id="LoginSubmitBtn"
-                class="submitBtn loginSubmitBtn"
-                style="margin-top: 0; padding-left: 15px; padding-right: 15px;"
-              >
-                <span class="fa fa-sign-in" style="font-size: 20px;"></span>
-                login
-              </div>
-              <p
-                id="signupLink"
-                style="
-                  color: rgb(9, 169, 243);
-                  margin-top: 30px;
-                  cursor: pointer;
-                  font-weight: bolder;
-                "
-              >
-                don't have user account?
-                <span style="color: red;">Signup now.</span>
-              </p>
             </div>
           </div>
           <div id="signupPage">
@@ -269,51 +221,33 @@
                   color: red;
                   margin: 30px;
                   margin-top: 0;
-                  font-size: 22px;
                 "
               >
-                Signup
+                Please add your information below.
               </p>
             </div>
             <div class="signupInputs">
-              <fieldset class="loginInputFld">
-                <legend>Enter your name</legend>
-                <span class="fa fa-user"></span>
-                <input id="nameFld" type="text" placeholder="full name" />
-              </fieldset>
-              <fieldset class="loginInputFld">
-                <legend>Enter your email</legend>
-                <span class="fa fa-envelope"></span>
-                <input id="emailFld" type="email" placeholder="email" />
-              </fieldset>
-              <fieldset class="loginInputFld">
-                <legend>Enter your mobile</legend>
-                <span style="font-size: 25px;" class="fa fa-mobile"></span>
-                <input id="mobileFld" type="text" placeholder="mobile" />
-              </fieldset>
-              <fieldset class="loginInputFld">
-                <legend>Enter your Password</legend>
-                <span class="fa fa-key"></span>
-                <input
-                  id="passwordFld"
-                  type="password"
-                  placeholder="password"
+              <div class="container">
+                <p>Enter you full name</p>
+                <i aria-hidden="true" style="font-size: 19px;" class="fa fa-user"></i
+                ><input
+                  id="WbstNameFld"
+                  type="text"
+                  placeholder="full name"
                 />
-              </fieldset>
-              <fieldset class="loginInputFld">
-                <legend>Confirm your Password</legend>
-                <span class="fa fa-key"></span>
-                <input
-                  id="confirmPasswordFld"
-                  type="password"
-                  placeholder="password"
-                />
-              </fieldset>
-              <div id="signupFormSubmitBtn" class="submitBtn signupSubmitBtn">
-                <span class="fa fa-sign-in" style="font-size: 20px;"></span>
-                Signup
               </div>
-              <p
+              <div class="container">
+                <p>Enter your email</p>
+                <i aria-hidden="true" class="fa fa-envelope"></i
+                ><input id="WbstEmailFld" type="email" placeholder="email" />
+              </div>
+              <div class="container">
+                <p>Enter your mobile</p>
+                <i aria-hidden="true" style="font-size: 25px;" class="fa fa-mobile"></i
+                ><input id="WbstMobileFld" type="text" placeholder="mobile" />
+              </div>
+              <input type="submit" value="Submit" id="signUpFormSubmitBtn" class="submitBtn" />
+              <!--p
                 class="loginBtn"
                 style="
                   color: rgb(9, 169, 243);
@@ -324,7 +258,7 @@
               >
                 Already have an account?
                 <span style="color: red; margin-left: 4px;">Login now.</span>
-              </p>
+              </p-->
             </div>
           </div>
 
@@ -345,8 +279,8 @@
                 <br />
                 <br />
                 <span id="introspan">
-                  Hi, I'm Nerd Aries. I'm a software engineer and architect.
-                  I've been in technology for almost 9 years. I made this
+                  Hi, my name is Mohammed. I'm a Software Engineer and Architect.
+                  I've been in tech for almost 9 years now. I made this
                   website for you... so that you can reach out to me.<!--my clients and students...-->
                   <!--Hey lithesia, welcome back!-->
                   <!--What brings you here today?-->
@@ -819,39 +753,42 @@
                   margin: auto;
                 "
               >
-                Get your customized website
+                Let's build your professional website today!
               </h3>
               <p
                 style="
-                  color: rgb(214, 68, 0);
+                  color: #d64400;
                   font-weight: bolder;
-                  margin: 10px;
+                  max-width: 400px;
+                  margin: auto;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
                   padding: 5px;
                 "
               >
-                Add your information below to get started.
+                Add your information below. We'll reach out to you.
               </p>
               <div class="WebsiteEstimatesForm">
-                <fieldset>
-                  <legend>Enter you full name</legend>
+                <div class="container">
+                  <p>Enter you full name</p>
                   <i aria-hidden="true" style="font-size: 19px;" class="fa fa-user"></i
                   ><input
                     id="WbstNameFld"
                     type="text"
                     placeholder="full name"
                   />
-                </fieldset>
-                <fieldset>
-                  <legend>Enter your email</legend>
+                </div>
+                <div class="container">
+                  <p>Enter your email</p>
                   <i aria-hidden="true" class="fa fa-envelope"></i
                   ><input id="WbstEmailFld" type="email" placeholder="email" />
-                </fieldset>
-                <fieldset>
-                  <legend>Enter your mobile</legend>
+                </div>
+                <div class="container">
+                  <p>Enter your mobile</p>
                   <i aria-hidden="true" style="font-size: 25px;" class="fa fa-mobile"></i
                   ><input id="WbstMobileFld" type="text" placeholder="mobile" />
-                </fieldset>
-                <fieldset>
+                </div>
+                <!--fieldset>
                   <legend>Enter new password</legend>
                   <i aria-hidden="true" class="fa fa-key"></i
                   ><input
@@ -868,11 +805,10 @@
                     type="password"
                     placeholder="password"
                   />
-                </fieldset>
+                </fieldset-->
                 <input
                   id="registerWbstClientConfirmBtn"
                   class="submitBtn"
-                  style="margin-top: 10px; border-radius: 4px;"
                   type="submit"
                   value="Submit"
                 />
@@ -995,7 +931,7 @@
                   </div>
                 </div>
                   <a href="https://www.youtube.com/channel/UCfDhh3wNUPareROmztcbN5g/" target="blank">
-                  <div style="width: 120px; margin: auto; font-weight: bolder;
+                  <div style="margin: auto; font-weight: bolder;
                     margin-top: 30px; margin-bottom: 50px; padding: 10px; border-radius: 3px; background-color: crimson; color: white; 
                     ">
                     <div style="display: flex; justify-content: center;">
@@ -1010,7 +946,7 @@
           <div id="TutoringPage">
             <div class="PageIntro TutoringPageIntro">
               <h3 style="color: #1c809d; margin-bottom: 30px;">
-                Book a tutoring session
+                Make me your tutor
               </h3>
               <div
                 style="
@@ -1024,12 +960,11 @@
                     Learning to code can be frustrating. Whether you're a
                     college student, a bootcamp student, or self-teaching
                     yourself how to code, you've probably been in situations
-                    where things just didn't make any sense. Well, I'm here to
-                    help you out.
+                    where things just didn't make any sense. <br/> <br/>
+                    Well, I'm here to help out.
                     <br />
                     <br />
-                    Book your tutoring session and invite me to your journey.
-                    Click on the next button.
+                    Click next to invite me to your journey.
                   </p>
                 </div>
                 <div
@@ -1064,56 +999,44 @@
                   text-align: center;
                 "
               >
-                Book your tutoring time below
+                Invite me to your coding journey!
               </h3>
               <p
                 style="
                   color: rgb(214, 68, 0);
                   font-weight: bolder;
-                  margin: 10px;
+                  max-width: 400px;
+                  margin: auto;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
                   padding: 5px;
                 "
               >
-                Add your information below to create account.
+                Add your information below. We'll reach out to you.
               </p>
               <div class="TutoringSessionForm">
-                <fieldset>
-                  <legend>Enter you full name</legend>
+                <div class="container">
+                  <p>Enter you full name</p>
                   <i aria-hidden="true" style="font-size: 19px;" class="fa fa-user"></i
-                  ><input id="TtrNameFld" type="text" placeholder="full name" />
-                </fieldset>
-                <fieldset>
-                  <legend>Enter your email</legend>
+                  ><input
+                    id="WbstNameFld"
+                    type="text"
+                    placeholder="full name"
+                  />
+                </div>
+                <div class="container">
+                  <p>Enter your email</p>
                   <i aria-hidden="true" class="fa fa-envelope"></i
-                  ><input id="TtrEmailFld" type="email" placeholder="email" />
-                </fieldset>
-                <fieldset>
-                  <legend>Enter your mobile</legend>
+                  ><input id="WbstEmailFld" type="email" placeholder="email" />
+                </div>
+                <div class="container">
+                  <p>Enter your mobile</p>
                   <i aria-hidden="true" style="font-size: 25px;" class="fa fa-mobile"></i
-                  ><input id="TtrMobileFld" type="text" placeholder="mobile" />
-                </fieldset>
-                <fieldset>
-                  <legend>Enter new password</legend>
-                  <i aria-hidden="true" class="fa fa-key"></i
-                  ><input
-                    id="TtrPasswordFld"
-                    type="password"
-                    placeholder="password"
-                  />
-                </fieldset>
-                <fieldset>
-                  <legend>Confirm password</legend>
-                  <i aria-hidden="true" class="fa fa-key"></i
-                  ><input
-                    id="TtrConfirmPasswordFld"
-                    type="password"
-                    placeholder="password"
-                  />
-                </fieldset>
+                  ><input id="WbstMobileFld" type="text" placeholder="mobile" />
+                </div>
                 <input
                   id="TutoringSubmitBtn"
                   class="submitBtn"
-                  style="margin-top: 10px; border-radius: 4px;"
                   type="submit"
                   value="Submit"
                 />
@@ -1143,33 +1066,30 @@
             <div class="PageIntro">
               <h3 style="color: #1c809d; margin-bottom: 30px;">
                 <br />
-                I'm your studies friend
+                Your mentor is just a click away
               </h3>
               <p style="margin-top: 5px; text-align: justify; margin: 0 5px;">
                 <br />
                 The tech ecosystem is overwhelming to navigate if you're just
                 starting out. But with some help, your life can be a lot easier
-                as you take this journey.
+                on this journey.
                 <br />
                 <br />
-                You may need some guidance and advice regarding trending
-                technologies you need to know, specific CS topics you need to
-                master, and also your ability to understand the tech ecosystem
-                properly.
+                Some amount of guidance and advice will make all the difference
                 <br />
                 <br />
-                Now lets figure it out together.
-                <br />
-                <br />
-                <br />
-                <br />
+                The link below takes you to our facebook group where most of the mentorship activities happen.
                 <br />
                 <br />
                 <a rel="noopener noreferrer" 
-                  style="color: #1c809d;"
+                  style="color:white;"
                   href="https://nerdaries.azurewebsites.net/"
                   target="_blank"
-                  ><p style="text-align: center;"></p
+                  ><p style="text-align: center; font-weight: bolder; margin-top: 20px; 
+                    padding:  10px; background-color: #0044aa; border-radius: 3px;">
+                    <i aria-hidden="true" style="margin-right: 5px; font-size: 17px;" class="fa fa-facebook-f"></i>
+                    Go to group
+                    </p
                 ></a>
               </p>
             </div>
