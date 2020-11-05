@@ -1054,6 +1054,7 @@ a {
   }
   .NALogo {
     height: 35px;
+    display: none;
   }
   #logoLi {
     padding: 0;
@@ -1110,15 +1111,18 @@ a {
 
   #ScrollToTopIcon {
     display: block;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 5px;
     margin-right: 10px;
-    color: rgb(38, 125, 165);
+    color: rgb(199, 0, 0);
+    background-color: #212121;
+    border-radius: 3px;
+    padding: 10px;
   }
-  /*#ScrollTopNavBarMenu {
-    border-bottom: 0;
-    background-color: #000000c0;
-  }*/
+  #ScrollTopNavBarMenu {
+    background: none;
+    box-shadow: none;
+  }
   #TopOnScrollIcon {
     margin-left: 10px;
     /*width: 75px;
