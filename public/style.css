@@ -210,7 +210,6 @@ header div ul li.active,
   /*background-color: #ffa46f;*/
   color: crimson;
 }
-.NALogo,
 .JoinBtn {
   width: 60px;
   height: 25px;
@@ -218,6 +217,11 @@ header div ul li.active,
   margin-right: 20px;
   padding: 5px;
   border-radius: 4px;
+}
+.NALogo {
+  padding-bottom: 10px;
+  width: 100px;
+  height: auto;
 }
 .JoinBtn {
   margin-top: -10px;
@@ -1046,12 +1050,7 @@ a {
   .additionalImg {
     max-height: 200px;
   }
-  .NALogo,
-  .JoinBtn {
-    width: 60px;
-    height: 25px;
-    padding: 5px;
-    margin-right: 0;
+  .NALogo {
   }
   #logoLi {
     padding: 0;
@@ -1108,8 +1107,9 @@ a {
   #ScrollToTopIcon {
     display: block;
     font-size: 40px;
+    margin-top: 4.5px;
     margin-right: 10px;
-    color: red;
+    color: rgb(179, 0, 0);
   }
   #TopOnScrollIcon {
     margin-left: 10px;
