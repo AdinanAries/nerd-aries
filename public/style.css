@@ -110,10 +110,10 @@ body {
   left: 0;
   top: 0;
   z-index: 5;
-  background-color: #212121;
+  /*background-color: #212121;*/
   width: 100%;
   padding: 5px 0;
-  border-bottom: 3px solid #ee0000;
+  background: linear-gradient(#000000, rgb(104, 0, 0));
 }
 #TopOnScrollIcon {
   margin-left: 50px;
@@ -1105,6 +1105,7 @@ a {
   #SCrollTopMenuList {
     display: none;
   }
+
   #ScrollToTopIcon {
     display: block;
     font-size: 40px;
@@ -1112,6 +1113,10 @@ a {
     margin-right: 10px;
     color: rgb(206, 0, 0);
   }
+  /*#ScrollTopNavBarMenu {
+    border-bottom: 0;
+    background-color: #000000c0;
+  }*/
   #TopOnScrollIcon {
     margin-left: 10px;
     /*width: 75px;
