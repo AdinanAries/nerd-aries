@@ -219,8 +219,8 @@ header div ul li.active,
   border-radius: 4px;
 }
 .NALogo {
-  padding-bottom: 10px;
-  width: 100px;
+  padding-bottom: 5px;
+  width: 80px;
   height: auto;
 }
 .JoinBtn {
@@ -1107,9 +1107,8 @@ a {
   #ScrollToTopIcon {
     display: block;
     font-size: 40px;
-    margin-top: 4.5px;
     margin-right: 10px;
-    color: rgb(179, 0, 0);
+    color: rgb(206, 0, 0);
   }
   #TopOnScrollIcon {
     margin-left: 10px;
