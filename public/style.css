@@ -1051,6 +1051,7 @@ a {
     max-height: 200px;
   }
   .NALogo {
+    height: 35px;
   }
   #logoLi {
     padding: 0;
@@ -1108,7 +1109,7 @@ a {
   #ScrollToTopIcon {
     display: block;
     font-size: 40px;
-    margin-top: 13px;
+    margin-top: 5px;
     margin-right: 10px;
     color: rgb(206, 0, 0);
   }
