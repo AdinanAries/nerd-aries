@@ -111,7 +111,7 @@ body {
   top: 0;
   z-index: 5;
   /*background-color: #212121;*/
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(243, 243, 243);
   width: 100%;
   padding: 5px 0;
   box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.2),
@@ -148,6 +148,10 @@ header div ul li,
   text-decoration: none;
   padding: 15px;
   cursor: pointer;
+}
+#ScrollTopNavBarMenu ul li {
+  padding: 0 15px;
+  padding-top: 7px;
 }
 header div ul li:hover,
 #ScrollTopNavBarMenu ul li:hover {
@@ -224,7 +228,6 @@ header div ul li.active,
 .NALogo {
   height: 23px;
   width: auto;
-  padding-top: 8px;
 }
 .JoinBtn {
   margin-top: -10px;
