@@ -13,6 +13,10 @@
   display: flex;
   justify-content: space-between;
 }
+.portfolio_last_project_display_imgs {
+  display: flex;
+  justify-content: center;
+}
 .portfolio_each_other_projects {
   margin: 0 10px;
 }
@@ -1016,6 +1020,9 @@ a {
     margin: 0;
     margin-bottom: 30px;
   }
+  .portfolio_last_project_display_imgs_column {
+    width: 42% !important;
+  }
 }
 @media only screen and (max-width: 1000px) {
   #WeatherContainer {
@@ -1246,6 +1253,15 @@ a {
   }
   #NotificationsBtn {
     margin-top: -6px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .portfolio_last_project_display_imgs {
+    flex-direction: column;
+  }
+  .portfolio_last_project_display_imgs_column {
+    width: 100% !important;
+    margin-bottom: 5px;
   }
 }
 @media only screen and (max-width: 320px) {
