@@ -6,6 +6,16 @@
   margin: 0;
   -webkit-appearance: none;
 }
+.portfolio_other_projects {
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio_each_other_projects {
+  margin: 0 10px;
+}
 #download_resume_button {
   position: fixed;
   bottom: 20px;
@@ -998,7 +1008,16 @@ a {
   border: none;
   height: 450px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
+  .portfolio_other_projects {
+    flex-direction: column;
+  }
+  .portfolio_each_other_projects {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
   #WeatherContainer {
     position: absolute;
     right: 50px;
