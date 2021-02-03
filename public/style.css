@@ -1049,7 +1049,7 @@ a {
     background-position: center top;
   }
   .JumbotronContentPaddingDiv {
-    padding-left: 10px;
+    padding-left: 0;
     position: absolute;
     left: 10px;
     bottom: 100px;
