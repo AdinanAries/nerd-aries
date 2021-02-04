@@ -40,6 +40,42 @@
 #download_resume_button p i {
   font-size: 15px;
 }
+.each_learning_resource {
+  background-color: rgb(224, 241, 255);
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+.each_learning_resource_btn {
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(0, 124, 173);
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+}
+.each_learning_resource_btn:hover {
+  background-color: rgb(0, 146, 204);
+}
+.qoute_of_the_day_para {
+  font-size: 30px;
+  font-family: "Courgette";
+  font-weight: bolder;
+  text-align: center;
+  color: #708eaa;
+  max-width: 500px;
+  margin: auto;
+}
+.qoute_of_the_day_para_author {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+button:focus {
+  outline: none;
+}
 input:focus {
   outline: none;
 }
@@ -1026,6 +1062,9 @@ a {
   }
 }
 @media only screen and (max-width: 1000px) {
+  .each_learning_resource {
+    border-radius: 0;
+  }
   #WeatherContainer {
     position: absolute;
     right: 50px;
