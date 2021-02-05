@@ -1,5 +1,22 @@
 //localStorage.setItem("isLoggedIn", "false");
 
+var daily_quotes = [
+  {
+    qoute: "",
+    author: ""
+  }
+];
+
+function get_daily_qoute(){
+
+  let qt = daily_quotes[Math.floor(Math.random() * daily_quotes.length)];
+  document.getElementById("main_daily_qoute_para").innerText = qt.qoute;
+  document.getElementById("main_daily_qoute_author_para").innerText = qt.author;
+
+}
+
+setInterval(get_daily_qoute, 5000);
+
 let checkisPersonLoggedIn = () => {
   if (localStorage.getItem("UserInfo") === null) {
     document.getElementById("smallScreenloginBtn").style.display = "block";
