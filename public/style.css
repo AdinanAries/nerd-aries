@@ -72,6 +72,7 @@
   font-size: 14px;
   font-weight: bolder;
   text-align: center;
+  color: rgb(6, 60, 99);
 }
 button:focus {
   outline: none;
