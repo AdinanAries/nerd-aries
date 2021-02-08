@@ -2,9 +2,45 @@
 
 var daily_quotes = [
   {
-    qoute: "",
-    author: ""
-  }
+    qoute: `You never change things by fighting the existing reality. 
+    To change something, build a new model that makes the existing model obsolete.`,
+    author: "- Buckminster Fuller"
+  },
+  {
+    qoute: `Technological progress has merely provided us with more efficient means for going backwards.`,
+    author: "- Aldous Huxley"
+  },
+  {
+    qoute: `There will come a time when it isn't 'They're spying on me through my phone' anymore. 
+    Eventually, it will be 'My phone is spying on me`,
+    author: "- Philip K. Dick"
+  },
+  {
+    qoute: `First we thought the PC was a calculator. Then we found out how to turn numbers into letters with ASCII — and we thought it was a typewriter. 
+    Then we discovered graphics, and we thought it was a television. With the World Wide Web, we've realized it's a brochure.`,
+    author: "- Douglas Adams"
+  },
+  {
+    qoute: `At the end of a miserable day, instead of grieving my virtual nothing, 
+    I can always look at my loaded wastepaper basket and tell myself that if I failed, at least I took a few trees down with me.`,
+    author: "- David Sedaris"
+  },
+  {
+    qoute: `It's supposed to be automatic, but actually you have to push this button.`,
+    author: "- John Brunner"
+  },
+  {
+    qoute: `Even the technology that promises to unite us, divides us.
+     Each of us is now electronically connected to the globe, and yet we feel utterly alone.`,
+    author: "- Dan Brown"
+  },
+  {
+    qoute: `The test of the machine is the satisfaction it gives you. There isn't any other test. If the machine produces tranquility it's right. 
+    If it disturbs you it's wrong until either the machine or your mind is changed`,
+    author: "- Robert M. Pirsig"
+  },
+
+  
 ];
 
 function get_daily_qoute(){
