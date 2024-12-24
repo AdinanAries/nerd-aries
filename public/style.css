@@ -823,7 +823,7 @@ a {
       rgba(255, 255, 255, 0.3),
       rgb(255, 255, 255)
     ),
-    url("images/cssBackground.jpg");
+    url("/BodyBackground7.jpg");
   background-size: cover;
   background-position: bottom;
   min-width: 100vw;
