@@ -816,7 +816,7 @@ a {
 
 .JumbotronContent {
   /*background-image: url("cssBackground.jpg");*/
-  background: linear-gradient(
+  /*background: linear-gradient(
       rgb(255, 255, 255),
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.1),
@@ -825,9 +825,9 @@ a {
     ),
     url("/BodyBackground7.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom;*/
   min-width: 100vw;
-  height: 65vh;
+  height: 50vh;
   min-height: 400px;
   z-index: 1;
   position: relative;
