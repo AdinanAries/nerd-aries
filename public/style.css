@@ -364,12 +364,12 @@ header div ul li.active,
   height: 200px;
 }
 main {
-  min-height: 68vh;
+  /*min-height: 68vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: -22px;
-  padding-bottom: 40px;
+  padding-bottom: 40px;*/
 }
 #dashboard ul {
   list-style-type: none;
@@ -827,18 +827,18 @@ a {
   background-size: cover;
   background-position: bottom;*/
   min-width: 100vw;
-  height: 50vh;
-  min-height: 400px;
+  height: 400px;
+  /*min-height: 400px;*/
   z-index: 1;
   position: relative;
-  margin-top: -40px;
-  padding-top: 80px;
+  /*margin-top: -40px;*/
+  padding-top: 120px;
 }
 .JumbotronContentPaddingDiv {
   padding-left: 90px;
   position: absolute;
   left: 10px;
-  bottom: 120px;
+  bottom: 80px;
 }
 .MyDisplayPic {
   margin-left: 5px;
@@ -1083,7 +1083,8 @@ a {
     height: 80px;
   }
   .JumbotronContent {
-    margin-top: -25px;
+    /*margin-top: -25px;*/
+    height: 300px;
     padding-top: 40px;
     width: 100vw;
     background-size: cover;
@@ -1093,7 +1094,7 @@ a {
     padding-left: 0;
     position: absolute;
     left: 10px;
-    bottom: 100px;
+    bottom: 0;
   }
   #projects_display_list {
     margin: auto !important;
