@@ -537,12 +537,27 @@ function RegisterStudent(callback) {
 }
 
 function init() {
-  let imgDefer = document.querySelectorAll('img.defer');
-  for (let i = 0; i < imgDefer.length; i++) {
-    if (imgDefer[i].getAttribute('data-src')) {
-      imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+  var index = 0;
+  var imgDefer = document.querySelectorAll('img.defer');
+  function imgDeferFunc() {
+    if(index < imgDefer.length){
+      
+        // Main function logic
+        if (imgDefer[index].getAttribute('data-src')) {
+          imgDefer[index].setAttribute('src', imgDefer[index].getAttribute('data-src'));
+        }
+
+        // Recurre the function on interval
+        const imgDeferInterval = setTimeout(()=>{
+          imgDeferFunc();
+        }, 4000);
+
+        // Increment index
+        index++;
     }
+
   }
+  imgDeferFunc();
 }
 
 window.onload = init;
